@@ -1,0 +1,9 @@
+{
+  "id": "manager_enter_sale",
+  "role": "manager",
+  "scope": "Bounded navigation observation; does not claim a completed sale or restaurant workflow",
+  "steps": [
+    { "id": "enter_sale", "action": "menu", "item": 1 },
+    { "id": "inspect_sale_entry", "action": "observe" }
+  ]
+}

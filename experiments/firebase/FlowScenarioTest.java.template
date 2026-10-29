@@ -1,0 +1,179 @@
+package com.dtsgt.brainlabtests;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.accessibility.AccessibilityNodeInfo;
+import android.widget.AdapterView;
+import androidx.test.platform.app.InstrumentationRegistry;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.lang.reflect.Field;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/** Executes explicit native-control recipes; no Activity shortcut after login and no business SQL writes. */
+public class FlowScenarioTest extends FlowLoginTest {
+    private String scenario;
+    private void record(String label) throws Exception {
+        Activity a=resumed();event(label,a,false);
+        JSONObject row=new JSONObject();row.put("scenario",scenario);row.put("step",label);row.put("activity",a==null?"none":a.getClass().getSimpleName());
+        row.put("elapsedMs",android.os.SystemClock.elapsedRealtime());row.put("timeZone",java.util.TimeZone.getDefault().getID());
+        ins.runOnMainSync(()->{
+            try {
+                if(a instanceof com.dtsgt.mpos.PBase){
+                    com.dtsgt.mpos.PBase base=(com.dtsgt.mpos.PBase)a;
+                    row.put("runtimeRole",base.gl.rol);row.put("restaurantMode",base.gl.peRest);row.put("globalOmitTip",base.gl.propina_vacia);row.put("sinPropina",base.gl.sin_propina);
+                    row.put("peNoCierre",base.gl.peNoCierre);row.put("peSalon",base.gl.peSalon);row.put("pelCaja",base.gl.pelCaja);
+                    row.put("needsWaiterPin",base.gl.pelClaveMes);row.put("needsCashierPin",base.gl.pelClaveCaja);row.put("subLoginMode",base.gl.modoclave);
+                    row.put("paraLlevar",base.gl.parallevar);row.put("delivery",base.gl.delivery);row.put("meseroPrecuenta",base.gl.mesero_precuenta);
+                    JSONArray menus=new JSONArray();
+                    for(String viewName:new String[]{"gridView1","gridView2","grdbtn"}){
+                        int id=a.getResources().getIdentifier(viewName,"id",a.getPackageName());View view=id==0?null:a.findViewById(id);
+                        if(view instanceof AdapterView&&view.isShown()){
+                            AdapterView<?> list=(AdapterView<?>)view;if(list.getAdapter()==null)continue;
+                            JSONObject menu=new JSONObject();menu.put("view",viewName);menu.put("count",list.getAdapter().getCount());JSONArray ids=new JSONArray();
+                            for(int i=0;i<list.getAdapter().getCount();i++)if(list.getAdapter().getItem(i) instanceof com.dtsgt.base.clsClasses.clsMenu)ids.put(((com.dtsgt.base.clsClasses.clsMenu)list.getAdapter().getItem(i)).ID);
+                            menu.put("ids",ids);menus.put(menu);
+                        }
+                    }row.put("menus",menus);
+                    for(String name:new String[]{"propina","propinaperc","monto_propina","tot","diagnosticRenderedTip","diagnosticRenderedTotal","propina_vacia"}){
+                        try {Field f=a.getClass().getDeclaredField(name);f.setAccessible(true);Object value=f.get(a);
+                            if(value instanceof Boolean)row.put(name,value);
+                            else if(value instanceof Number){double n=((Number)value).doubleValue();row.put(name,Double.isFinite(n)?n:"non_finite");}
+                        }catch(NoSuchFieldException ignored){}
+                    }
+                    JSONObject counts=new JSONObject();
+                    for(String table:new String[]{"T_VENTA","T_PAGO","D_FACTURA","D_FACTURAPR","P_CAJACIERRE","T_ORDEN","T_ORDENCUENTA","T_RES_SESSION","P_RES_TURNO","D_USUARIO_ASISTENCIA"}){
+                        try(android.database.Cursor c=base.db.rawQuery("SELECT COUNT(*) FROM "+table,null)){c.moveToFirst();counts.put(table,c.getInt(0));}
+                        catch(Exception ignored){}
+                    }row.put("rowCounts",counts);
+                }
+            }catch(Exception e){throw new RuntimeException("scenario_state_capture_failed");}
+        });
+        try(FileOutputStream f=new FileOutputStream(new File(ins.getTargetContext().getCacheDir(),"brain-scenario.jsonl"),true)){
+            f.write((row.toString()+"\n").getBytes(StandardCharsets.UTF_8));
+        }
+        AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();
+        if(root!=null)try(FileOutputStream f=new FileOutputStream(new File(ins.getTargetContext().getCacheDir(),"brain-scenario-private-dialogs.txt"),true)){
+            for(AccessibilityNodeInfo n:root.findAccessibilityNodeInfosByViewId("android:id/message"))if(n.getText()!=null)f.write((label+": "+n.getText().toString()+"\n").getBytes(StandardCharsets.UTF_8));
+        }
+    }
+    private void noModalDialog() throws Exception {
+        AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();
+        long until=System.currentTimeMillis()+2000;
+        while(root==null&&System.currentTimeMillis()<until){Thread.sleep(100);root=ins.getUiAutomation().getRootInActiveWindow();}
+        assertNotNull("foreground_window_not_observed",root);
+        assertTrue("unexpected_modal_dialog_requires_explicit_recipe_action",root.findAccessibilityNodeInfosByViewId("android:id/message").isEmpty());
+    }
+    private int resource(Activity a,String id) {int value=a.getResources().getIdentifier(id,"id",a.getPackageName());assertTrue("view_id_not_resolved",value!=0);return value;}
+    private void foregroundView(Activity a,String id) {
+        AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();assertNotNull("foreground_window_not_observed",root);
+        String name=a.getResources().getResourceName(resource(a,id));
+        assertFalse("requested_control_is_not_in_foreground_window",root.findAccessibilityNodeInfosByViewId(name).isEmpty());
+    }
+    private boolean groupDialog() {
+        Activity a=resumed();AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();if(root==null||a==null)return false;
+        String title=a.getPackageName()+":id/lbltitulo";
+        for(AccessibilityNodeInfo n:root.findAccessibilityNodeInfosByViewId(title))if(n.getText()!=null&&"Grupos de mesas".equals(n.getText().toString()))return true;
+        return false;
+    }
+    private boolean clickKnown(AccessibilityNodeInfo node,String text) {
+        if(node==null)return false;
+        if(node.getText()!=null&&text.equalsIgnoreCase(node.getText().toString().trim())){
+            AccessibilityNodeInfo current=node;for(int i=0;i<4&&current!=null;i++,current=current.getParent())if(current.isClickable())return current.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+        }
+        for(int i=0;i<node.getChildCount();i++)if(clickKnown(node.getChild(i),text))return true;return false;
+    }
+    private void execute(JSONObject step) throws Exception {
+        String action=step.getString("action");Activity a=resumed();assertNotNull("scenario_has_no_resumed_activity",a);
+        if(action.equals("observe"))return;
+        if(action.equals("wait_activity")){
+            String expected=step.getString("activity");long until=System.currentTimeMillis()+15000;
+            while(System.currentTimeMillis()<until){Activity current=resumed();if(current!=null&&expected.equals(current.getClass().getSimpleName()))return;Thread.sleep(200);}
+            throw new AssertionError("expected_navigation_not_observed");
+        }
+        if(action.equals("click_label")){
+            assertTrue("explicit_label_not_found",clickKnown(ins.getUiAutomation().getRootInActiveWindow(),step.getString("label")));return;
+        }
+        if(action.equals("choose_group")){
+            if(!groupDialog()){
+                noModalDialog();foregroundView(a,step.getString("view"));
+                ins.runOnMainSync(()->{View header=a.findViewById(resource(a,step.optString("view")));assertTrue(header.performClick());});ins.waitForIdleSync();
+            }
+            long until=System.currentTimeMillis()+5000;while(!groupDialog()&&System.currentTimeMillis()<until)Thread.sleep(100);
+            assertTrue("assigned_groups_dialog_not_foreground",groupDialog());
+            assertTrue("assigned_group_not_offered",clickKnown(ins.getUiAutomation().getRootInActiveWindow(),step.getString("label")));return;
+        }
+        if(action.equals("wait_adapter")){
+            long until=System.currentTimeMillis()+15000;
+            while(System.currentTimeMillis()<until){
+                final boolean[] ready={false};ins.runOnMainSync(()->{AdapterView<?> view=a.findViewById(resource(a,step.optString("view")));ready[0]=view!=null&&view.isShown()&&view.getAdapter()!=null&&view.getAdapter().getCount()>=step.optInt("minimum",1);});
+                if(ready[0]){foregroundView(a,step.getString("view"));return;}Thread.sleep(200);
+            }throw new AssertionError("business_adapter_not_ready");
+        }
+        noModalDialog();
+        if(action.equals("authenticate")){
+            assertTrue("unsupported_authentication_screen",a instanceof com.dtsgt.mpos.ValidaClave);
+            JSONObject operator=new JSONObject(new String(Files.readAllBytes(new File("/sdcard/Download/brain-operator.json").toPath()),StandardCharsets.UTF_8));
+            com.dtsgt.mpos.PBase base=(com.dtsgt.mpos.PBase)a;
+            boolean requirePin=base.gl.modoclave==0?base.gl.pelClaveMes:base.gl.pelClaveCaja;
+            ins.runOnMainSync(()->{
+                AdapterView<?> list=a.findViewById(com.dtsgt.mpos.R.id.listView1);boolean found=false;
+                for(int i=0;i<list.getAdapter().getCount();i++){
+                    com.dtsgt.base.clsClasses.clsMenu item=(com.dtsgt.base.clsClasses.clsMenu)list.getAdapter().getItem(i);
+                    if(String.valueOf(operator.optInt("CODIGO_VENDEDOR")).equals(item.Cod)){
+                        found=list.performItemClick(list.getChildAt(i-list.getFirstVisiblePosition()),i,list.getAdapter().getItemId(i));break;
+                    }
+                }assertTrue("authorized_suboperator_not_offered",found);
+            });ins.waitForIdleSync();
+            if(requirePin){
+                for(char ch:("C"+operator.optString("CLAVE")+"E").toCharArray()){
+                    String tag=String.valueOf(ch);ins.runOnMainSync(()->{View button=a.getWindow().getDecorView().findViewWithTag(tag);assertNotNull(button);assertTrue(button.isShown());assertTrue(button.performClick());});ins.waitForIdleSync();
+                }
+            }return;
+        }
+        if(action.equals("adapter_item")||action.equals("click_id"))foregroundView(a,step.getString("view"));
+        if(action.equals("menu"))foregroundView(a,"gridView1");
+        ins.runOnMainSync(()->{
+            try {
+                if(action.equals("menu")){
+                    android.widget.GridView grid=a.findViewById(com.dtsgt.mpos.R.id.gridView1);assertNotNull("menu_grid_missing",grid);boolean found=false;
+                    for(int i=0;i<grid.getAdapter().getCount();i++){
+                        com.dtsgt.base.clsClasses.clsMenu item=(com.dtsgt.base.clsClasses.clsMenu)grid.getAdapter().getItem(i);
+                        if(item.ID==step.getInt("item")){found=grid.performItemClick(grid.getChildAt(i-grid.getFirstVisiblePosition()),i,grid.getAdapter().getItemId(i));break;}
+                    }assertTrue("requested_menu_item_not_offered",found);
+                }else if(action.equals("click_id")){
+                    View view=a.findViewById(resource(a,step.getString("view")));assertNotNull(view);assertTrue(view.isShown());assertTrue(view.isEnabled());assertTrue(view.performClick());
+                }else if(action.equals("key")){
+                    String tag=step.getString("tag");assertTrue("invalid_business_keyboard_tag",tag.matches("[0-9ECB.\\-]"));
+                    View view=a.getWindow().getDecorView().findViewWithTag(tag);assertNotNull("keyboard_tag_missing",view);assertTrue(view.isShown());assertTrue(view.performClick());
+                }else if(action.equals("adapter_item")){
+                    AdapterView<?> list=a.findViewById(resource(a,step.getString("view")));assertNotNull(list);assertTrue(list.isShown());boolean found=false;
+                    for(int i=0;i<list.getAdapter().getCount();i++){
+                        Object item=list.getAdapter().getItem(i);Field field=item.getClass().getField(step.getString("field"));
+                        if(step.getString("value").equals(String.valueOf(field.get(item)))){found=list.performItemClick(list.getChildAt(i-list.getFirstVisiblePosition()),i,list.getAdapter().getItemId(i));break;}
+                    }assertTrue("business_item_not_offered",found);
+                }else if(action.equals("assert_count")){
+                    String table=step.getString("table");assertTrue(table.matches("(?:T|D|P)_[A-Z0-9_]+"));
+                    com.dtsgt.mpos.PBase base=(com.dtsgt.mpos.PBase)a;
+                    try(android.database.Cursor c=base.db.rawQuery("SELECT COUNT(*) FROM "+table,null)){c.moveToFirst();assertEquals(step.getInt("equals"),c.getInt(0));}
+                }else throw new AssertionError("unsupported_recipe_action");
+            }catch(org.json.JSONException|ReflectiveOperationException e){throw new RuntimeException("invalid_recipe_or_adapter_contract");}
+        });
+    }
+    @Test public void executeNativeRecipe() throws Exception {
+        JSONObject plan=new JSONObject(new String(Files.readAllBytes(new File("/sdcard/Download/brain-flow-plan.json").toPath()),StandardCharsets.UTF_8));
+        scenario=plan.getString("id");assertTrue(scenario.matches("[a-z][a-z0-9_]{2,60}"));
+        super.authorizedOperatorLogsInThroughControls();record("authenticated");
+        JSONArray steps=plan.getJSONArray("steps");assertTrue(steps.length()>0&&steps.length()<=100);
+        for(int i=0;i<steps.length();i++){
+            JSONObject step=steps.getJSONObject(i);String label=step.getString("id");assertTrue(label.matches("[a-z][a-z0-9_]{2,60}"));
+            record(label+"_before");execute(step);ins.waitForIdleSync();Thread.sleep(700);record(label+"_after");
+        }
+    }
+}

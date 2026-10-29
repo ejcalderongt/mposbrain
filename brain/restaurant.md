@@ -2,6 +2,14 @@
 
 Estado: mapa de código bd94c90c, recorrido dinámico completo pendiente. Los nombres de actividades no son necesariamente los textos que ve el operador.
 
+## Recorrido observado en el perfil QA
+
+Ejecución: los tres operadores autorizados entraron por Main y su teclado real (evidence/auth). La caja recibida tiene peSalon=false: la ruta observada es Menu → Venta → ValidaClave → ResMesero, no SalonMesas. La tabla siguiente conserva rutas alternativas de código; no representa una única secuencia ejecutada. En esta configuración peNoCierre=true permite pasar la validación sin P_CAJACIERRE; los PIN de mesero/caja subordinados están desactivados. El login de Main sí exige clave.
+
+ResMesero se alcanzó con un diálogo de grupos, sin demostrar todavía mesas visibles. La base sincronizada no tiene asignaciones P_MESERO_GRUPO para este mesero. Código ResMesero.showGrupoMenu llama showGrupoChecks si no encuentra grupos y después muestra el selector. Aplicar asignaciones escribe P_MESERO_GRUPO, elimina P_RES_TURNO del mesero y termina la actividad. Debe documentarse ese recorrido nativo antes de abrir mesa; no reemplazarlo por escrituras de fixture. Las mesas recibidas tienen nombres alfanuméricos. waiter-open-table es una receta pendiente, no una prueba aprobada.
+
+Aislamiento observado: gate Android bloqueó conexión externa y permitió roundtrip de Firebase SDK contra RTDB local. Los runners vuelven a verificar reglas, APK y boot antes de cada receta. Esto habilita exploración local con backend emulado; no autoriza cobros o envíos al servidor QA real.
+
 | Etapa | Componentes / evidencia | Estado que se debe observar |
 |---|---|---|
 | Acceso | MainActivity, Menu, Venta; Menu.valmodulo/valmenu | Empresa/país, caja/ruta, rol, permisos, peRest |

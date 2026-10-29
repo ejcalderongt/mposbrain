@@ -1,0 +1,48 @@
+package com.dtsgt.brainlabtests;
+
+import android.content.Context;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import com.google.android.gms.tasks.Tasks;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import java.io.File;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
+import org.json.JSONObject;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import static org.junit.Assert.*;
+
+@RunWith(AndroidJUnit4.class)
+public class NetworkGateTest {
+    @Test public void verifyNetworkBoundary() throws Exception {
+        Context context=InstrumentationRegistry.getInstrumentation().getTargetContext();
+        String phase=InstrumentationRegistry.getArguments().getString("phase","");
+        assertTrue("invalid_gate_phase",phase.equals("baseline")||phase.equals("isolated"));
+        JSONObject target=new JSONObject(new String(Files.readAllBytes(new File("/sdcard/Download/brain-gate-target.json").toPath()),StandardCharsets.UTF_8));
+        boolean connected=false;
+        try(Socket socket=new Socket()){socket.connect(new InetSocketAddress(target.getString("host"),target.getInt("port")),3000);connected=true;}catch(Exception expected){}
+        boolean demo="demo-mpos-brain".equals(FirebaseApp.getInstance().getOptions().getProjectId());
+        boolean roundTrip=false,removed=false;
+        if(phase.equals("isolated")&&!connected&&demo){
+            String marker="synthetic_"+UUID.randomUUID().toString();
+            DatabaseReference ref=FirebaseDatabase.getInstance().getReference("BrainIsolationProbe").child(UUID.randomUUID().toString());
+            try {
+                Tasks.await(ref.setValue(marker),20,TimeUnit.SECONDS);
+                roundTrip=marker.equals(Tasks.await(ref.get(),20,TimeUnit.SECONDS).getValue(String.class));
+            } finally {Tasks.await(ref.removeValue(),20,TimeUnit.SECONDS);removed=true;}
+        }
+        JSONObject out=new JSONObject();out.put("schema",1);out.put("phase",phase);out.put("demoProject",demo);
+        out.put("externalConnectSucceeded",connected);out.put("localSdkRoundTrip",roundTrip);out.put("probeRemoved",removed);
+        Files.write(new File(context.getCacheDir(),"brain-network-gate.json").toPath(),out.toString().getBytes(StandardCharsets.UTF_8));
+        assertTrue("unexpected_Firebase_project",demo);
+        if(phase.equals("baseline"))assertTrue("external_baseline_unavailable",connected);
+        else {assertFalse("external_connection_not_blocked",connected);assertTrue("local_SDK_round_trip_failed",roundTrip);assertTrue(removed);}
+    }
+}

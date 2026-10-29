@@ -1,0 +1,7435 @@
+{
+  "schema": 1,
+  "scenario": "manager_enter_sale",
+  "role": "manager",
+  "attempt_id": "20261029T172659",
+  "time_utc": "2026-10-29T17:27:13.316160+00:00",
+  "source_commit": "bd94c90c6b097887a1c3d75ef6f70351bd031921",
+  "apk_sha256": "a4a616381b7171d94cd1c91521e6369d9da67435f021ec9420238dccbcae2f30",
+  "recipe_sha256": "e4ef76587401c365978b5baeb6388386a67b069fe9ce3096d5dff0169e1566f6",
+  "network_gate_verified_before_run": true,
+  "scope": "Bounded navigation observation; does not claim a completed sale or restaurant workflow",
+  "statuses": {
+    "executeNativeRecipe": "pass"
+  },
+  "events": [
+    {
+      "stage": "manager_login_ready",
+      "received": false,
+      "activity": "MainActivity",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/rellaydn",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/rellayup",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            487
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relstrip",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            23,
+            1271,
+            98
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView82",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            14,
+            28,
+            1266,
+            60
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblCDisp",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            64,
+            1271,
+            93
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView134",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1083,
+            23,
+            1252,
+            98
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            452,
+            107,
+            827,
+            487
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/listView1",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            136,
+            443,
+            730
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            394,
+            443,
+            458
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            15,
+            400,
+            437,
+            452
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            462,
+            443,
+            526
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            15,
+            468,
+            437,
+            520
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            530,
+            443,
+            594
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            15,
+            536,
+            437,
+            588
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            598,
+            443,
+            662
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            15,
+            604,
+            437,
+            656
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            666,
+            443,
+            730
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            15,
+            672,
+            437,
+            724
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relEnter",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            476,
+            496,
+            804,
+            730
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/rellaytot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            476,
+            496,
+            804,
+            543
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblPass",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            501,
+            795,
+            538
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyb",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            476,
+            538,
+            804,
+            730
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyBase",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            547,
+            795,
+            721
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.view.ViewGroup",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            547,
+            795,
+            721
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            547,
+            636,
+            721
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            547,
+            636,
+            629
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView98",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            547,
+            556,
+            583
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView99",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            565,
+            547,
+            636,
+            583
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView100",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            592,
+            556,
+            629
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView101",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            565,
+            592,
+            636,
+            629
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            638,
+            636,
+            721
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView112",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            638,
+            556,
+            675
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView113",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            565,
+            638,
+            636,
+            675
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView114",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            485,
+            684,
+            636,
+            721
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            645,
+            547,
+            795,
+            721
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            645,
+            547,
+            795,
+            629
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView102",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            645,
+            547,
+            715,
+            583
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView106",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            724,
+            547,
+            795,
+            583
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView105",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            645,
+            592,
+            715,
+            629
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView24",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            724,
+            592,
+            795,
+            629
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView104",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            724,
+            592,
+            795,
+            629
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            645,
+            638,
+            795,
+            721
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView109",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            645,
+            638,
+            715,
+            675
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView110",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            645,
+            684,
+            715,
+            721
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView25",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            724,
+            638,
+            795,
+            721
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView108",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            724,
+            638,
+            795,
+            721
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relbotpan",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            732,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView9",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            542,
+            732,
+            737,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView10",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1176,
+            732,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/statusBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        },
+        {
+          "id": "android:id/navigationBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "manager_login_result",
+      "received": true,
+      "activity": "Menu",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoad",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            83
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            80,
+            1280,
+            83
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            19,
+            23,
+            1167,
+            83
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/btnImp",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1176,
+            26,
+            1275,
+            71
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/gridView1",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            1279,
+            699
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            320,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            320,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            196,
+            320,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            83,
+            639,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            83,
+            639,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            196,
+            639,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            83,
+            958,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            83,
+            958,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            196,
+            958,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            83,
+            1277,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            83,
+            1277,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            196,
+            1277,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            237,
+            320,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            237,
+            320,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            350,
+            320,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            237,
+            639,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            237,
+            639,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            350,
+            639,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            237,
+            958,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            237,
+            958,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            350,
+            958,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            237,
+            1277,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            237,
+            1277,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            350,
+            1277,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            391,
+            320,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            391,
+            320,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            504,
+            320,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            391,
+            639,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            391,
+            639,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            504,
+            639,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            391,
+            958,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            391,
+            958,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            504,
+            958,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            391,
+            1277,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            391,
+            1277,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            504,
+            1277,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            545,
+            320,
+            699
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            545,
+            320,
+            658
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            658,
+            320,
+            690
+          ]
+        },
+        {
+          "id": "android:id/statusBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        },
+        {
+          "id": "android:id/navigationBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "authenticated",
+      "received": false,
+      "activity": "Menu",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoad",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            83
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            80,
+            1280,
+            83
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            19,
+            23,
+            1167,
+            83
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/btnImp",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1176,
+            26,
+            1275,
+            71
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/gridView1",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            1279,
+            699
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            320,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            320,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            196,
+            320,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            83,
+            639,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            83,
+            639,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            196,
+            639,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            83,
+            958,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            83,
+            958,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            196,
+            958,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            83,
+            1277,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            83,
+            1277,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            196,
+            1277,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            237,
+            320,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            237,
+            320,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            350,
+            320,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            237,
+            639,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            237,
+            639,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            350,
+            639,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            237,
+            958,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            237,
+            958,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            350,
+            958,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            237,
+            1277,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            237,
+            1277,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            350,
+            1277,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            391,
+            320,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            391,
+            320,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            504,
+            320,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            391,
+            639,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            391,
+            639,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            504,
+            639,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            391,
+            958,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            391,
+            958,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            504,
+            958,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            391,
+            1277,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            391,
+            1277,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            504,
+            1277,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            545,
+            320,
+            699
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            545,
+            320,
+            658
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            658,
+            320,
+            690
+          ]
+        },
+        {
+          "id": "android:id/statusBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        },
+        {
+          "id": "android:id/navigationBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "enter_sale_before",
+      "received": false,
+      "activity": "Menu",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoad",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            83
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            80,
+            1280,
+            83
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            19,
+            23,
+            1167,
+            83
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/btnImp",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1176,
+            26,
+            1275,
+            71
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/gridView1",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            1279,
+            699
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            320,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            83,
+            320,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            196,
+            320,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            83,
+            639,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            83,
+            639,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            196,
+            639,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            83,
+            958,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            83,
+            958,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            196,
+            958,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            83,
+            1277,
+            237
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            83,
+            1277,
+            196
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            196,
+            1277,
+            228
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            237,
+            320,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            237,
+            320,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            350,
+            320,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            237,
+            639,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            237,
+            639,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            350,
+            639,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            237,
+            958,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            237,
+            958,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            350,
+            958,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            237,
+            1277,
+            391
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            237,
+            1277,
+            350
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            350,
+            1277,
+            382
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            391,
+            320,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            391,
+            320,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            504,
+            320,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            391,
+            639,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            391,
+            639,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            320,
+            504,
+            639,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            391,
+            958,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            391,
+            958,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            639,
+            504,
+            958,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            391,
+            1277,
+            545
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            391,
+            1277,
+            504
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            958,
+            504,
+            1277,
+            536
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            545,
+            320,
+            699
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            545,
+            320,
+            658
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            658,
+            320,
+            690
+          ]
+        },
+        {
+          "id": "android:id/statusBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        },
+        {
+          "id": "android:id/navigationBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "enter_sale_after",
+      "received": false,
+      "activity": "Venta",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoad",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgRoadTit",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            53,
+            73
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            53,
+            25,
+            222,
+            48
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit5",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            53,
+            50,
+            222,
+            72
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit2",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            231,
+            25,
+            241,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit4",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            250,
+            33,
+            1042,
+            65
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit3",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1098,
+            35,
+            1173,
+            64
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoadbar",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            73,
+            1280,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relLogo",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1184,
+            25,
+            1278,
+            74
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgTitLogo",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1189,
+            30,
+            1273,
+            69
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relProd",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            75,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relPTop",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            637,
+            408
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recfam",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            212,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            212,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            184,
+            212,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            76,
+            424,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            76,
+            424,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            184,
+            424,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            76,
+            637,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            76,
+            637,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            184,
+            637,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            216,
+            212,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            216,
+            212,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            324,
+            212,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            216,
+            424,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            216,
+            424,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            324,
+            424,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            216,
+            637,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            216,
+            637,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            324,
+            637,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            356,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            356,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            0,
+            464,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            356,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            356,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            212,
+            464,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            356,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            356,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            424,
+            464,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblDir",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            408,
+            637,
+            417
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relPBot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            417,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recProd",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            417,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relSepar",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            637,
+            75,
+            643,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relSep2",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1177,
+            75,
+            1186,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relVenta",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            75,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recventa",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            75,
+            1181,
+            352
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relsubtot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            352,
+            1181,
+            408
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView115",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            352,
+            749,
+            380
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView383",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1023,
+            378,
+            1059,
+            406
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTot",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1068,
+            352,
+            1178,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relbotpan",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/rellaytot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            1181,
+            460
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/editText10",
+          "type": "android.widget.EditText",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            644,
+            445
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relbarcode",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            412,
+            690,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView52",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            647,
+            412,
+            686,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblCant",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            690,
+            412,
+            1087,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView430",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1092,
+            410,
+            1176,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relwrap",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            465,
+            765,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/grdbtn",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            532
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            512
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            512,
+            756,
+            527
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            532,
+            756,
+            599
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            532,
+            756,
+            579
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            579,
+            756,
+            594
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            599,
+            756,
+            666
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            599,
+            756,
+            646
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            646,
+            756,
+            661
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            666,
+            756,
+            733
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            666,
+            756,
+            713
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            713,
+            756,
+            728
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            733,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            733,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            648,
+            780,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyb",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            770,
+            458,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyBase",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.view.ViewGroup",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            971,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView98",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            870,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView99",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            467,
+            971,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView100",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            542,
+            870,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView101",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            542,
+            971,
+            609
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            618,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView112",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            618,
+            870,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView113",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            618,
+            971,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView114",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            694,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView102",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1071,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView106",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            467,
+            1172,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView105",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            542,
+            1071,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView24",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            542,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView104",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            542,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView109",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            618,
+            1071,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView110",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            694,
+            1071,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView25",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView108",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/gridView2",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            228
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            208
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            208,
+            1275,
+            223
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            228,
+            1275,
+            295
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            228,
+            1275,
+            275
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            275,
+            1275,
+            290
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            295,
+            1275,
+            362
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            295,
+            1275,
+            342
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            342,
+            1275,
+            357
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            362,
+            1275,
+            429
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            362,
+            1275,
+            409
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            409,
+            1275,
+            424
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            429,
+            1275,
+            496
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            429,
+            1275,
+            476
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            476,
+            1275,
+            491
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            496,
+            1275,
+            563
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            496,
+            1275,
+            543
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            543,
+            1275,
+            558
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            563,
+            1275,
+            630
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            563,
+            1275,
+            610
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            610,
+            1275,
+            625
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            630,
+            1275,
+            697
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            630,
+            1275,
+            677
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            677,
+            1275,
+            692
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            697,
+            1275,
+            764
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            697,
+            1275,
+            744
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            744,
+            1275,
+            759
+          ]
+        },
+        {
+          "id": "android:id/statusBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        },
+        {
+          "id": "android:id/navigationBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "inspect_sale_entry_before",
+      "received": false,
+      "activity": "Venta",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoad",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgRoadTit",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            53,
+            73
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            53,
+            25,
+            222,
+            48
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit5",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            53,
+            50,
+            222,
+            72
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit2",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            231,
+            25,
+            241,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit4",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            250,
+            33,
+            1042,
+            65
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit3",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1098,
+            35,
+            1173,
+            64
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoadbar",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            73,
+            1280,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relLogo",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1184,
+            25,
+            1278,
+            74
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgTitLogo",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1189,
+            30,
+            1273,
+            69
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relProd",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            75,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relPTop",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            637,
+            408
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recfam",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            212,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            212,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            184,
+            212,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            76,
+            424,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            76,
+            424,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            184,
+            424,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            76,
+            637,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            76,
+            637,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            184,
+            637,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            216,
+            212,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            216,
+            212,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            324,
+            212,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            216,
+            424,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            216,
+            424,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            324,
+            424,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            216,
+            637,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            216,
+            637,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            324,
+            637,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            356,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            356,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            0,
+            464,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            356,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            356,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            212,
+            464,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            356,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            356,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            424,
+            464,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblDir",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            408,
+            637,
+            417
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relPBot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            417,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recProd",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            417,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relSepar",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            637,
+            75,
+            643,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relSep2",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1177,
+            75,
+            1186,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relVenta",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            75,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recventa",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            75,
+            1181,
+            352
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relsubtot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            352,
+            1181,
+            408
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView115",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            352,
+            749,
+            380
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView383",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1023,
+            378,
+            1059,
+            406
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTot",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1068,
+            352,
+            1178,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relbotpan",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/rellaytot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            1181,
+            460
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/editText10",
+          "type": "android.widget.EditText",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            644,
+            445
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relbarcode",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            412,
+            690,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView52",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            647,
+            412,
+            686,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblCant",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            690,
+            412,
+            1087,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView430",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1092,
+            410,
+            1176,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relwrap",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            465,
+            765,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/grdbtn",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            532
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            512
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            512,
+            756,
+            527
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            532,
+            756,
+            599
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            532,
+            756,
+            579
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            579,
+            756,
+            594
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            599,
+            756,
+            666
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            599,
+            756,
+            646
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            646,
+            756,
+            661
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            666,
+            756,
+            733
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            666,
+            756,
+            713
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            713,
+            756,
+            728
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            733,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            733,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            648,
+            780,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyb",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            770,
+            458,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyBase",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.view.ViewGroup",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            971,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView98",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            870,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView99",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            467,
+            971,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView100",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            542,
+            870,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView101",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            542,
+            971,
+            609
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            618,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView112",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            618,
+            870,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView113",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            618,
+            971,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView114",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            694,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView102",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1071,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView106",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            467,
+            1172,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView105",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            542,
+            1071,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView24",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            542,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView104",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            542,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView109",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            618,
+            1071,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView110",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            694,
+            1071,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView25",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView108",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/gridView2",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            228
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            208
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            208,
+            1275,
+            223
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            228,
+            1275,
+            295
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            228,
+            1275,
+            275
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            275,
+            1275,
+            290
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            295,
+            1275,
+            362
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            295,
+            1275,
+            342
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            342,
+            1275,
+            357
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            362,
+            1275,
+            429
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            362,
+            1275,
+            409
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            409,
+            1275,
+            424
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            429,
+            1275,
+            496
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            429,
+            1275,
+            476
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            476,
+            1275,
+            491
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            496,
+            1275,
+            563
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            496,
+            1275,
+            543
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            543,
+            1275,
+            558
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            563,
+            1275,
+            630
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            563,
+            1275,
+            610
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            610,
+            1275,
+            625
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            630,
+            1275,
+            697
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            630,
+            1275,
+            677
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            677,
+            1275,
+            692
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            697,
+            1275,
+            764
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            697,
+            1275,
+            744
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            744,
+            1275,
+            759
+          ]
+        },
+        {
+          "id": "android:id/statusBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        },
+        {
+          "id": "android:id/navigationBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "inspect_sale_entry_after",
+      "received": false,
+      "activity": "Venta",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoad",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgRoadTit",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            53,
+            73
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            53,
+            25,
+            222,
+            48
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit5",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            53,
+            50,
+            222,
+            72
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit2",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            231,
+            25,
+            241,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit4",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            250,
+            33,
+            1042,
+            65
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTit3",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1098,
+            35,
+            1173,
+            64
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relRoadbar",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            73,
+            1280,
+            76
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relLogo",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1184,
+            25,
+            1278,
+            74
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgTitLogo",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1189,
+            30,
+            1273,
+            69
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relProd",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            75,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relPTop",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            637,
+            408
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recfam",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            212,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            76,
+            212,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            184,
+            212,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            76,
+            424,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            76,
+            424,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            184,
+            424,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            76,
+            637,
+            216
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            76,
+            637,
+            184
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            184,
+            637,
+            207
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            216,
+            212,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            216,
+            212,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            324,
+            212,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            216,
+            424,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            216,
+            424,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            324,
+            424,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            216,
+            637,
+            356
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            216,
+            637,
+            324
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            324,
+            637,
+            347
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            356,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            356,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            0,
+            464,
+            212,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            356,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            212,
+            356,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            212,
+            464,
+            424,
+            405
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            356,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/img1",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            424,
+            356,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lbl1",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            424,
+            464,
+            637,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblDir",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            408,
+            637,
+            417
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relPBot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            417,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recProd",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            417,
+            637,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relSepar",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            637,
+            75,
+            643,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relSep2",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1177,
+            75,
+            1186,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relVenta",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            75,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/recventa",
+          "type": "androidx.recyclerview.widget.RecyclerView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            75,
+            1181,
+            352
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relsubtot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            352,
+            1181,
+            408
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView115",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            352,
+            749,
+            380
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView383",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1023,
+            378,
+            1059,
+            406
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTot",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1068,
+            352,
+            1178,
+            405
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relbotpan",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/rellaytot",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            1181,
+            460
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/editText10",
+          "type": "android.widget.EditText",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            407,
+            644,
+            445
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relbarcode",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            412,
+            690,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView52",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            647,
+            412,
+            686,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblCant",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            690,
+            412,
+            1087,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView430",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1092,
+            410,
+            1176,
+            455
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relwrap",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            643,
+            465,
+            765,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/grdbtn",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            532
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            465,
+            756,
+            512
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            512,
+            756,
+            527
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            532,
+            756,
+            599
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            532,
+            756,
+            579
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            579,
+            756,
+            594
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            599,
+            756,
+            666
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            599,
+            756,
+            646
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            646,
+            756,
+            661
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            666,
+            756,
+            733
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            666,
+            756,
+            713
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            713,
+            756,
+            728
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            733,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            648,
+            733,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            648,
+            780,
+            756,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyb",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            770,
+            458,
+            1181,
+            770
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/relKeyBase",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.view.ViewGroup",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            971,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView98",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            467,
+            870,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView99",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            467,
+            971,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView100",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            542,
+            870,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView101",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            542,
+            971,
+            609
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            618,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView112",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            618,
+            870,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView113",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            879,
+            618,
+            971,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView114",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            779,
+            694,
+            971,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView102",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            467,
+            1071,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView106",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            467,
+            1172,
+            533
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView105",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            542,
+            1071,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView24",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            542,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView104",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            542,
+            1172,
+            609
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView109",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            618,
+            1071,
+            685
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView110",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            980,
+            694,
+            1071,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imageView25",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/textView108",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1080,
+            618,
+            1172,
+            761
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/gridView2",
+          "type": "android.widget.GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            228
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            161,
+            1275,
+            208
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            208,
+            1275,
+            223
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            228,
+            1275,
+            295
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            228,
+            1275,
+            275
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            275,
+            1275,
+            290
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            295,
+            1275,
+            362
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            295,
+            1275,
+            342
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            342,
+            1275,
+            357
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            362,
+            1275,
+            429
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            362,
+            1275,
+            409
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            409,
+            1275,
+            424
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            429,
+            1275,
+            496
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            429,
+            1275,
+            476
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            476,
+            1275,
+            491
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            496,
+            1275,
+            563
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            496,
+            1275,
+            543
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            543,
+            1275,
+            558
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            563,
+            1275,
+            630
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            563,
+            1275,
+            610
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            610,
+            1275,
+            625
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            630,
+            1275,
+            697
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            630,
+            1275,
+            677
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            677,
+            1275,
+            692
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            697,
+            1275,
+            764
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/imgNext",
+          "type": "android.widget.ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            697,
+            1275,
+            744
+          ]
+        },
+        {
+          "id": "com.dtsgt.mpos.brainflow:id/lblTrat",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1191,
+            744,
+            1275,
+            759
+          ]
+        },
+        {
+          "id": "android:id/statusBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        },
+        {
+          "id": "android:id/navigationBarBackground",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    }
+  ],
+  "states": [
+    {
+      "scenario": "manager_enter_sale",
+      "step": "authenticated",
+      "activity": "Menu",
+      "runtimeRole": 3,
+      "restaurantMode": true,
+      "globalOmitTip": false,
+      "sinPropina": false,
+      "rowCounts": {
+        "T_VENTA": 0,
+        "T_PAGO": 0,
+        "D_FACTURA": 0,
+        "D_FACTURAPR": 0,
+        "P_CAJACIERRE": 0
+      }
+    },
+    {
+      "scenario": "manager_enter_sale",
+      "step": "enter_sale_before",
+      "activity": "Menu",
+      "runtimeRole": 3,
+      "restaurantMode": true,
+      "globalOmitTip": false,
+      "sinPropina": false,
+      "rowCounts": {
+        "T_VENTA": 0,
+        "T_PAGO": 0,
+        "D_FACTURA": 0,
+        "D_FACTURAPR": 0,
+        "P_CAJACIERRE": 0
+      }
+    },
+    {
+      "scenario": "manager_enter_sale",
+      "step": "enter_sale_after",
+      "activity": "Venta",
+      "runtimeRole": 3,
+      "restaurantMode": true,
+      "globalOmitTip": false,
+      "sinPropina": false,
+      "tot": 0,
+      "rowCounts": {
+        "T_VENTA": 0,
+        "T_PAGO": 0,
+        "D_FACTURA": 0,
+        "D_FACTURAPR": 0,
+        "P_CAJACIERRE": 0
+      }
+    },
+    {
+      "scenario": "manager_enter_sale",
+      "step": "inspect_sale_entry_before",
+      "activity": "Venta",
+      "runtimeRole": 3,
+      "restaurantMode": true,
+      "globalOmitTip": false,
+      "sinPropina": false,
+      "tot": 0,
+      "rowCounts": {
+        "T_VENTA": 0,
+        "T_PAGO": 0,
+        "D_FACTURA": 0,
+        "D_FACTURAPR": 0,
+        "P_CAJACIERRE": 0
+      }
+    },
+    {
+      "scenario": "manager_enter_sale",
+      "step": "inspect_sale_entry_after",
+      "activity": "Venta",
+      "runtimeRole": 3,
+      "restaurantMode": true,
+      "globalOmitTip": false,
+      "sinPropina": false,
+      "tot": 0,
+      "rowCounts": {
+        "T_VENTA": 0,
+        "T_PAGO": 0,
+        "D_FACTURA": 0,
+        "D_FACTURAPR": 0,
+        "P_CAJACIERRE": 0
+      }
+    }
+  ]
+}

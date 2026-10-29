@@ -17,6 +17,8 @@ La base posdts.db vive en almacenamiento externo compartido. Otro applicationId 
 
 Las pruebas de rollback no tienen permiso INTERNET y no usan datos reales. La sincronización QA está autorizada para el alta y recepción; no implica autorización para ventas, FEL, cobros ni envíos operativos.
 
+Excepción de laboratorio documentada: las variantes flow-* conservan INTERNET para Firebase SDK local y usan una copia privada recibida. Sólo pueden ejecutar recetas después del gate de aislamiento del AVD dedicado (IPv4/IPv6, UID, boot y APK). El backend debe ser demo-mpos-brain en loopback. No sustituir este gate por asumir que otro applicationId aísla red o SQLite.
+
 No versiones claves, archivos SQLite, SOAP crudo, URLs con credenciales, Google Services, llaves de firma, capturas con datos de personas ni volcados sin filtrar. Los insumos privados viven en .local. No registres textos de EditText ni hashes de contraseñas de baja entropía.
 
 ## Impresión y propina

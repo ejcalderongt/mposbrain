@@ -1,0 +1,71 @@
+    private boolean clickLabel(AccessibilityNodeInfo node,String label){
+        if(node==null)return false;
+        if(node.getText()!=null&&label.equalsIgnoreCase(node.getText().toString().trim())){
+            AccessibilityNodeInfo current=node;for(int n=0;n<4&&current!=null;n++,current=current.getParent())if(current.isClickable())return current.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+        }
+        for(int n=0;n<node.getChildCount();n++)if(clickLabel(node.getChild(n),label))return true;return false;
+    }
+    private void acknowledgeLegacyWarning() throws Exception {
+        long until=System.currentTimeMillis()+2500;
+        while(System.currentTimeMillis()<until){
+            AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();
+            if(root!=null)for(AccessibilityNodeInfo n:root.findAccessibilityNodeInfosByViewId("android:id/message")){
+                if(n.getText()!=null&&n.getText().toString().contains("older version of Android")){
+                    assertTrue(clickLabel(root,"OK"));ins.waitForIdleSync();return;
+                }
+            }
+            Thread.sleep(200);
+        }
+    }
+    private void key(MainActivity main,String tag) {
+        ins.runOnMainSync(()->{
+            View button=main.getWindow().getDecorView().findViewWithTag(tag);
+            assertNotNull("native_keyboard_key_not_found",button);assertTrue(button.isShown());assertTrue(button.performClick());
+        });ins.waitForIdleSync();
+    }
+    @Test public void authorizedOperatorLogsInThroughControls() throws Exception {
+        String role=InstrumentationRegistry.getArguments().getString("role","");assertTrue(role.equals("waiter")||role.equals("cashier")||role.equals("manager"));
+        JSONObject operator=new JSONObject(new String(Files.readAllBytes(new File("/sdcard/Download/brain-operator.json").toPath()),StandardCharsets.UTF_8));
+        Intent intent=new Intent(ins.getTargetContext(),MainActivity.class);intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);ins.getTargetContext().startActivity(intent);
+        long until=System.currentTimeMillis()+30000;Activity current=null;
+        while(System.currentTimeMillis()<until){current=resumed();if(current instanceof MainActivity)break;Thread.sleep(300);}
+        assertTrue("login_activity_not_resumed",current instanceof MainActivity);MainActivity main=(MainActivity)current;
+        ins.waitForIdleSync();acknowledgeLegacyWarning();event(role+"_login_ready",main,false);
+        AtomicReference<Boolean> selected=new AtomicReference<>(false);
+        ins.runOnMainSync(()->{
+            android.widget.GridView grid=main.findViewById(R.id.listView1);
+            for(int i=0;i<grid.getAdapter().getCount();i++){
+                com.dtsgt.base.clsClasses.clsMenu item=(com.dtsgt.base.clsClasses.clsMenu)grid.getAdapter().getItem(i);
+                if(operator.optString("CODIGO").equals(item.Cod)){
+                    grid.setSelection(i);selected.set(grid.performItemClick(grid.getChildAt(i-grid.getFirstVisiblePosition()),i,grid.getAdapter().getItemId(i)));break;
+                }
+            }
+        });
+        assertTrue("authorized_operator_not_offered",selected.get());ins.waitForIdleSync();
+        key(main,"C");for(char digit:operator.optString("CLAVE").toCharArray())key(main,String.valueOf(digit));key(main,"E");
+        until=System.currentTimeMillis()+20000;Activity landing=null;
+        while(System.currentTimeMillis()<until){landing=resumed();if(landing instanceof com.dtsgt.mpos.Menu)break;Thread.sleep(250);}
+        boolean success=landing instanceof com.dtsgt.mpos.Menu;event(role+"_login_result",landing,success);
+        AccessibilityNodeInfo feedback=ins.getUiAutomation().getRootInActiveWindow();
+        if(feedback!=null)try(FileOutputStream f=new FileOutputStream(new File(ins.getTargetContext().getCacheDir(),"brain-login-private-dialog.txt"))){
+            for(AccessibilityNodeInfo n:feedback.findAccessibilityNodeInfosByViewId("android:id/message"))if(n.getText()!=null)f.write((n.getText().toString()+"\n").getBytes(StandardCharsets.UTF_8));
+        }
+        JSONObject result=new JSONObject();result.put("role",role);result.put("landedOnMenu",success);
+        ins.runOnMainSync(()->{
+            try {
+                result.put("selectedVendorMatches",main.gl.codigo_vendedor==operator.optInt("CODIGO_VENDEDOR"));
+                result.put("routeMatches",main.gl.codigo_ruta==operator.optInt("RUTA"));result.put("runtimeRole",main.gl.rol);
+                result.put("restaurantMode",main.gl.peRest);result.put("countryHN","HN".equals(main.gl.codigo_pais));
+            }catch(Exception e){throw new RuntimeException("login_observation_failed");}
+        });
+        JSONArray menuIds=new JSONArray();
+        if(success){Activity menu=landing;ins.runOnMainSync(()->{
+            android.widget.GridView grid=menu.findViewById(R.id.gridView1);
+            for(int i=0;i<grid.getAdapter().getCount();i++)menuIds.put(((com.dtsgt.base.clsClasses.clsMenu)grid.getAdapter().getItem(i)).ID);
+        });}
+        result.put("menuItemIds",menuIds);
+        Files.write(new File(ins.getTargetContext().getCacheDir(),"brain-login-result.json").toPath(),result.toString().getBytes(StandardCharsets.UTF_8));
+        assertTrue("login_did_not_reach_menu",success);assertTrue("legacy_lookup_chose_another_vendor",result.getBoolean("selectedVendorMatches"));
+        assertTrue(result.getBoolean("routeMatches"));assertTrue(result.getBoolean("restaurantMode"));assertTrue(result.getBoolean("countryHN"));
+    }
+}

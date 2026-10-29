@@ -1,0 +1,14 @@
+{
+  "id": "waiter_enter_tables",
+  "role": "waiter",
+  "scope": "Native route from login through Venta and waiter authentication to ResMesero; does not claim a placed order or payment",
+  "steps": [
+    { "id": "enter_sale", "action": "menu", "item": 1 },
+    { "id": "sale_ready", "action": "wait_activity", "activity": "Venta" },
+    { "id": "choose_waiter_module", "action": "adapter_item", "view": "grdbtn", "field": "ID", "value": "63" },
+    { "id": "waiter_auth_ready", "action": "wait_activity", "activity": "ValidaClave" },
+    { "id": "authenticate_waiter", "action": "authenticate" },
+    { "id": "tables_ready", "action": "wait_activity", "activity": "ResMesero" },
+    { "id": "inspect_tables", "action": "observe" }
+  ]
+}

@@ -26,4 +26,4 @@ def build(variant):
     if completed.returncode: raise SystemExit(completed.returncode)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--variant',choices=['guarded','rollback','qa'],required=True);build(p.parse_args().variant)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--variant',choices=['guarded','rollback','qa','flow-guarded','flow-rollback'],required=True);build(p.parse_args().variant)

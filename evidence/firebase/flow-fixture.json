@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "snapshot_sha256": "d13cc07cf54155f496b04c3b9b44e77e3dcf520a69c04731430eff05976d86bb",
+  "catalog_tables": 243,
+  "operational_documents_at_import": false,
+  "network_gate_verified_before_import": true,
+  "copied_to_dedicated_flow_avd": true
+}

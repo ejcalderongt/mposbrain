@@ -1,0 +1,17 @@
+{
+  "id": "waiter_open_table",
+  "role": "waiter",
+  "scope": "Native waiter route, assigned area selection and opening an ordinary table to the guest-count screen; no placed order or payment yet",
+  "steps": [
+    { "id": "enter_sale", "action": "menu", "item": 1 },
+    { "id": "sale_ready", "action": "wait_activity", "activity": "Venta" },
+    { "id": "choose_waiter", "action": "adapter_item", "view": "grdbtn", "field": "ID", "value": "63" },
+    { "id": "auth_ready", "action": "wait_activity", "activity": "ValidaClave" },
+    { "id": "authenticate_waiter", "action": "authenticate" },
+    { "id": "tables_activity", "action": "wait_activity", "activity": "ResMesero" },
+    { "id": "choose_area", "action": "choose_group", "view": "textView179b", "label": "${group_label}" },
+    { "id": "visible_tables_ready", "action": "wait_adapter", "view": "gridView1", "minimum": 1 },
+    { "id": "open_ordinary_table", "action": "adapter_item", "view": "gridView1", "field": "codigo_mesa", "value": "${mesa_id}" },
+    { "id": "guest_count_ready", "action": "wait_activity", "activity": "Comensales" }
+  ]
+}

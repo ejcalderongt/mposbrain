@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "time_utc": "2026-10-29T17:11:17.260595+00:00",
+  "variant": "flow-guarded",
+  "avd": "mPos_Brain_Flow_10_API35",
+  "source_commit": "bd94c90c6b097887a1c3d75ef6f70351bd031921",
+  "apk_sha256": "a4a616381b7171d94cd1c91521e6369d9da67435f021ec9420238dccbcae2f30",
+  "boot_fingerprint": "76363e02db9b47759899faf814364f3eb66c53bc5b271ce2e56219c12f6a83ad",
+  "project": "demo-mpos-brain",
+  "policies": {
+    "iptables": {
+      "guest_app_uid_range": "10000-199999",
+      "loopback_allowed": true,
+      "other_destinations_rejected": true
+    },
+    "ip6tables": {
+      "guest_app_uid_range": "10000-199999",
+      "loopback_allowed": true,
+      "other_destinations_rejected": true
+    }
+  },
+  "statuses": {
+    "baseline": {
+      "verifyNetworkBoundary": "pass"
+    },
+    "isolated": {
+      "verifyNetworkBoundary": "pass"
+    }
+  },
+  "observations": [
+    {
+      "schema": 1,
+      "phase": "baseline",
+      "demoProject": true,
+      "externalConnectSucceeded": true,
+      "localSdkRoundTrip": false,
+      "probeRemoved": false
+    },
+    {
+      "schema": 1,
+      "phase": "isolated",
+      "demoProject": true,
+      "externalConnectSucceeded": false,
+      "localSdkRoundTrip": true,
+      "probeRemoved": true
+    }
+  ],
+  "business_tests_allowed": true,
+  "scope": "Dedicated guest app UID range, IPv4/IPv6, loopback via ADB; not a Windows-host firewall change"
+}

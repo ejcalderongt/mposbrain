@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "time_utc": "2026-10-29T17:03:49.433006+00:00",
+  "project": "demo-mpos-brain",
+  "host": "127.0.0.1",
+  "port": 19000,
+  "synthetic_round_trip": true,
+  "probe_removed": true,
+  "scope": "Host-side loopback REST only; Android SDK routing and external-network isolation still require their own gate"
+}

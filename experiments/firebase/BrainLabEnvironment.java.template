@@ -1,0 +1,18 @@
+package com.dtsgt.brainlab;
+
+import android.app.Application;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+
+/** Laboratory only. Fail closed instead of falling back to the actual Firebase project. */
+public final class BrainLabEnvironment {
+    public static void configure(Application app) {
+        FirebaseApp instance=FirebaseApp.getInstance();
+        if(!"demo-mpos-brain".equals(instance.getOptions().getProjectId()))throw new IllegalStateException("brain_demo_project_required");
+        instance.setDataCollectionDefaultEnabled(false);
+        FirebaseDatabase.getInstance().useEmulator("127.0.0.1",19000);
+        // Storage is redirected even while its emulator is not needed/running; never use the real bucket.
+        FirebaseStorage.getInstance().useEmulator("127.0.0.1",19199);
+    }
+}
