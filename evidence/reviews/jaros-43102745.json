@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "commit": "4310274574a08efd3a116fe2905175673960a706",
+  "baseline": "b12b47665a28bafb57f4bb85de989b31b0b2613b",
+  "scope": "JDK17 execution of extracted real methods with synthetic fields, no Android UI/DB/physical printer; fillTotals stubbed",
+  "observations": {
+    "inherited_flag_tip": 13.5,
+    "excluded_tip": 13.5,
+    "explicit_removed_tip": 0.0,
+    "extra_zero_after_remove_tip": 13.5,
+    "variable_footer_tip_present": false,
+    "variable_footer_total_present": false,
+    "exception_reports_success": true,
+    "save_failure_reports_success": false
+  },
+  "origins": [
+    {
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "method": "totalOrder",
+      "line": 901,
+      "sha256": "42d5a1ed114217ca1142f020eeea2a7b7e21544b9bd09569f752accd1b716543",
+      "unchanged_from_original_baseline": false
+    },
+    {
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "method": "totalOrderCortesia",
+      "line": 3874,
+      "sha256": "40faaea76b09e3e71eceed5f6fae90617bf98de7e7865192432021362d6fce9e",
+      "unchanged_from_original_baseline": true
+    },
+    {
+      "file": "app/src/main/java/com/dtsgt/classes/clsDocCuenta.java",
+      "method": "footerBaseGUA",
+      "line": 355,
+      "sha256": "0b96049d8fb3421f24331beb82f091e9def8c124cabe44cf3bb1501fb89f3151",
+      "unchanged_from_original_baseline": true
+    },
+    {
+      "file": "app/src/main/java/com/dtsgt/classes/clsDocument.java",
+      "method": "buildPrint",
+      "line": 192,
+      "sha256": "120f0187165f5d9192ca5db8092c5e8f43522b6e5072600f6d38cff78fd9ea99",
+      "unchanged_from_original_baseline": true
+    }
+  ],
+  "primary_print_still_ignores_build_result": true,
+  "primary_without_tip_mutation_removed": true,
+  "without_tip_button_removed": true
+}

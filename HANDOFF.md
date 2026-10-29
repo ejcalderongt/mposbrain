@@ -12,6 +12,8 @@ Baselines: b12b47665a28bafb57f4bb85de989b31b0b2613b original; c21e92ec diagnóst
 
 ## Sesión actual
 
+Revisión posterior solicitada por el usuario: origin/dev626b avanzó a 43102745 (incluye81498bc0). Ver evidence/reviews/jaros-43102745.md/json. Corrige por código los dos mecanismos de cero originales y elimina el botón SIN PROPINA; el mensaje manual anterior no aplica a esa rama. Footer variable y manejo de fallo de documento siguen sin corregir. Probes JDK17 ejecutados con métodos reales y dobles, sin UI Android del nuevo commit. Posibles regresiones de exclusiones; no declarar causa histórica ni cierre. Scripts de laboratorio anteriores siguen fijados a bd94c90c/c21e92ec, no representan automáticamente43102745.
+
 Inventario AST Java y XML generado sin copiar textos de código ni literales sensibles. Consultar catalog/scan-summary.json para cifras y huella. Todas las actividades detectadas tienen ficha estática en flows/activities. Los flujos requieren validar configuración, rol y ejecución.
 
 Entorno local: .venv con tree-sitter 0.25.2 y tree-sitter-java 0.23.5. La versión 0.26.0 produjo una excepción nativa al escanear este corpus; el lock conserva la versión que completó el análisis.
