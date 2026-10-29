@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_utc": "2026-10-29T15:37:20.099187+00:00",
+  "generated_utc": "2026-10-29T15:59:03.561242+00:00",
   "source_commit": "bd94c90c6b097887a1c3d75ef6f70351bd031921",
   "source_branch": "dev626b_ejc",
   "source_dirty_paths": [
@@ -23,7 +23,8 @@
     "risk_patterns": 2571,
     "menu_items": 78,
     "country_branches": 245,
-    "activities": 227
+    "activities": 227,
+    "trace_events": 291
   },
   "java_parse_error_files": 0,
   "permissions": [

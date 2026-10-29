@@ -78,6 +78,7 @@ def scan(source):
     source = source.resolve()
     parser = Parser(Language(tree_sitter_java.language()))
     inventory, classes, methods, calls, navigation, layouts, handlers = [], [], [], [], [], [], []
+    trace_events=[]
     globals_access, sql_access, schema, risks, menus, country_sites = [], [], [], [], [], []
     method_by_id, class_by_simple = {}, defaultdict(list)
     declarations = {'class_declaration', 'interface_declaration', 'enum_declaration'}
@@ -132,6 +133,14 @@ def scan(source):
                 calls.append(row)
                 args = node.child_by_field_name('arguments')
                 argtext = text(args)
+                if args:
+                    event_arg=None
+                    if name=='tracePropina' and args.named_children:event_arg=args.named_children[0]
+                    if receiver=='DiagnosticLog' and name in ('event','error') and len(args.named_children)>1:event_arg=args.named_children[1]
+                    if event_arg and event_arg.type=='string_literal':
+                        event_name=text(event_arg).strip('"')
+                        if re.fullmatch(r'[a-z][a-z0-9_]{2,100}',event_name):
+                            trace_events.append({**ref(path,node),'event':event_name,'class':owner,'method':method,'runtime':'unobserved'})
                 if name == 'setContentView':
                     for layout in re.findall(r'R\.layout\.(\w+)', argtext):
                         layouts.append({**ref(path, node), 'class': owner, 'layout': layout, 'method': method})
@@ -246,7 +255,7 @@ def scan(source):
     payloads = {'inventory': inventory, 'classes': classes, 'methods': methods, 'calls': calls, 'navigation': navigation,
                 'layout_bindings': layouts, 'xml_handlers': handlers, 'global_state': globals_access,
                 'sql_access': sql_access, 'schema_candidates': schema, 'risk_patterns': risks,
-                'menu_items': menus, 'country_branches': country_sites, 'activities': manifest_rows}
+                'menu_items': menus, 'country_branches': country_sites, 'activities': manifest_rows,'trace_events':trace_events}
     for name, rows in payloads.items(): write_rows(name, rows)
     commit = git(source, 'rev-parse', 'HEAD')
     status = git(source, 'status', '--porcelain')

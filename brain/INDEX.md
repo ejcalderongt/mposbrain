@@ -3,6 +3,7 @@
 | Capa | Entrada | Qué responde |
 |---|---|---|
 | Operación | onboarding.md | Cómo se inicia y recibe configuración |
+| Arquitectura | architecture.md | Componentes, estado compartido e integraciones |
 | Restaurante | restaurant.md | Recorrido prioritario y matriz de validación |
 | Conceptos | glossary.md | Nombres ambiguos y unidades que deben seguirse |
 | Navegación | ../flows/INDEX.md | Actividades, layouts e Intents candidatos |
@@ -11,6 +12,9 @@
 | Integraciones | ../catalog/wsdl-operations.json | Operaciones expuestas por WSDL QA |
 | Incidentes | propina.md | Candidatos, mecanismos y pruebas |
 | Evidencia | ../evidence/ | Resultados sanitizados reproducibles |
+| Telemetría | telemetry.md | Extracción, correlación y límites de las trazas |
+| Cobertura | coverage.md | Qué está probado y qué sigue pendiente |
+| Aprendizaje continuo | continuous-learning.md | Ciclo de incorporación y revisión |
 | Aprendizaje | ../templates/learning.md | Cómo incorporar evidencia nueva |
 
 Los inventarios generados por dominio se encuentran en generated. La clasificación por nombre de archivo ayuda a buscar; no establece reglas de negocio. Los esquemas SQL son candidatos estáticos, no el esquema efectivo de una base sincronizada.

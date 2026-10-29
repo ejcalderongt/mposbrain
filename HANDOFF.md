@@ -18,6 +18,8 @@ Entorno local: .venv con tree-sitter 0.25.2 y tree-sitter-java 0.23.5. La versi�
 
 Laboratorio offline: AVD mPos_Brain_Lab_10, puerto 5580, 1280x800, 10 pulgadas. Clones ignorados: .local/workspaces/guarded, rollback y qa. Los dos primeros eliminan INTERNET del manifest; QA conserva red para el alta autorizada.
 
+QA de recepción: AVD mPos_Brain_QA_10_API35, puerto 5584, imagen Google APIs API 35. El primer AVD QA con API 37.2 falló antes de ejecutar mPos. Ver evidence/lab-environment.md. Nunca limpiar datos después de recibir una base sin conservar copia privada.
+
 El usuario enseñó el alta: base vacía abre Comunicación; empresa y clave permiten recibir configuración/catálogos desde su servicio AWS QA. Los insumos están exclusivamente en .local/qa-input.json. No pedirlos otra vez ni copiarlos a documentación pública.
 
 ## Pendientes que impiden declarar el objetivo completo

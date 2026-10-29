@@ -20,3 +20,4 @@ Estos índices describen candidatos del código; no acreditan recorrido ni permi
 | menu_items | 78 |
 | country_branches | 245 |
 | activities | 227 |
+| trace_events | 291 |

@@ -159,10 +159,13 @@ dependencies {{
         document.write_text(doc,encoding='utf-8')
         origins=derive_probe(workspace,variant)
     provenance={'variant':variant,'commit':subprocess.check_output(['git','-C',str(workspace),'rev-parse','HEAD']).decode().strip(),
-                'application_id':appid,'network_permission':variant=='qa','test_seams':['private buildHeader() made protected in lab only; DB header stubbed','physical printer replaced by a recording driver','percentage recovery probe does not execute the calculator'],
+                'application_id':appid,'network_permission':variant=='qa','test_seams':(['private buildHeader() made protected in lab only; DB header stubbed','physical printer replaced by a recording driver','percentage recovery probe does not execute the calculator'] if variant!='qa' else ['actual MainActivity and WSRec with payload-free phase observer']),
                 'source_fragments':origins,'source_repo_modified':False,
                 'firebase_initialization':'FirebaseInitProvider removed in lab manifest; no SDK installation registration'}
     (workspace/'brain-lab-provenance.json').write_text(json.dumps(provenance,indent=2),encoding='utf-8')
+    if variant=='qa':
+        from qa_trace import install
+        install()
     print(json.dumps({'workspace':str(workspace),'variant':variant,'application_id':appid,'fragments':len(origins)}))
     return workspace
 

@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.view.accessibility.AccessibilityNodeInfo;
+import android.graphics.Rect;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry;
@@ -47,10 +49,21 @@ public class QaBootstrapTest {
     private void event(String stage,Activity a,boolean received) throws Exception {
         JSONObject out=new JSONObject(); out.put("stage",stage); out.put("received",received);
         out.put("activity",a==null?"none":a.getClass().getSimpleName());
-        JSONArray nodes=new JSONArray(); if(a!=null)ins.runOnMainSync(()->tree(a.getWindow().getDecorView(),nodes)); out.put("nodes",nodes);
+        JSONArray nodes=new JSONArray();
+        AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();
+        if(root!=null) accessibilityTree(root,nodes);
+        else if(a!=null)ins.runOnMainSync(()->tree(a.getWindow().getDecorView(),nodes));
+        out.put("nodes",nodes);
         try(FileOutputStream f=new FileOutputStream(new File(ins.getTargetContext().getCacheDir(),"brain-onboarding.jsonl"),true)) {
             f.write((out.toString()+"\n").getBytes(StandardCharsets.UTF_8));
         }
+    }
+    private void accessibilityTree(AccessibilityNodeInfo node,JSONArray rows) throws Exception {
+        JSONObject row=new JSONObject();Rect bounds=new Rect();node.getBoundsInScreen(bounds);
+        row.put("id",node.getViewIdResourceName()==null?"none":node.getViewIdResourceName());
+        row.put("type",String.valueOf(node.getClassName()));row.put("visible",node.isVisibleToUser());row.put("enabled",node.isEnabled());
+        row.put("bounds",new JSONArray(new int[]{bounds.left,bounds.top,bounds.right,bounds.bottom}));rows.put(row);
+        for(int i=0;i<node.getChildCount();i++){AccessibilityNodeInfo child=node.getChild(i);if(child!=null)accessibilityTree(child,rows);}
     }
     @Test public void emptyDatabaseOpensCommunicationAndReceivesQa() throws Exception {
         JSONObject input=new JSONObject(new String(Files.readAllBytes(new File("/sdcard/Download/brain-qa-input.json").toPath()),StandardCharsets.UTF_8));
@@ -67,7 +80,7 @@ public class QaBootstrapTest {
         event("communication_input_ready",screen,false);
         ins.runOnMainSync(()->screen.doStart(null));
         deadline=System.currentTimeMillis()+240000;
-        boolean received=false; String last="";
+        boolean received=false; String last="";int lastPhaseCount=0;
         while(System.currentTimeMillis()<deadline){
             a=resumed();
             AtomicReference<Boolean> state=new AtomicReference<>(false);
@@ -75,7 +88,10 @@ public class QaBootstrapTest {
             String current=a==null?"none":a.getClass().getSimpleName();
             if(!current.equals(last)){event("receive_navigation",a,received);last=current;}
             File phases=new File(ins.getTargetContext().getCacheDir(),"brain-sync-phase.jsonl");
-            boolean finalReturned=phases.isFile()&&new String(Files.readAllBytes(phases.toPath()),StandardCharsets.UTF_8).contains("final_validations_returned");
+            String phaseText=phases.isFile()?new String(Files.readAllBytes(phases.toPath()),StandardCharsets.UTF_8):"";
+            int count=phaseText.split("\n").length;
+            if(count!=lastPhaseCount){event("sync_phase_observation_"+count,a,received);lastPhaseCount=count;}
+            boolean finalReturned=phaseText.contains("final_validations_returned");
             if(received&&finalReturned)break; Thread.sleep(1000);
         }
         event("receive_end",resumed(),received);
