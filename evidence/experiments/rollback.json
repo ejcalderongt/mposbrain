@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "variant": "rollback",
+  "source_commit": "c21e92ececdd221b3caf7889be90b716fe0c221b",
+  "time_utc": "2026-10-29T15:44:24.686360+00:00",
+  "experiment_kind": "Android component contracts; extracted source probes + production receipt generator + injected failures",
+  "country_fixture": "HN",
+  "dedicated_avd": true,
+  "network_permission": false,
+  "apk_sha256": "c5a44e1168bb8fc0418a5f9158f9001686b7cc6ef6c9cf01ba6fdc994f4f43fc",
+  "duration_seconds": 36.58,
+  "statuses": {
+    "fixedTipFooterStillWorks": "pass",
+    "documentExceptionCannotReportSuccess": "fail",
+    "explicitChoiceKeepsExclusions": "pass",
+    "failedBuildCannotDispatchOlderReceipt": "fail",
+    "tipNotLostAfterWithoutThenWith": "fail",
+    "explicitWithTipRecoversInheritedPercentage": "fail",
+    "variableTipAppearsInFooter": "fail"
+  },
+  "observations": [
+    {
+      "case": "control_fixed_tip_footer",
+      "variant": "rollback",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "tipPresent": true,
+      "totalPresent": true
+    },
+    {
+      "case": "document_exception",
+      "variant": "rollback",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "builderReportedSuccess": true
+    },
+    {
+      "case": "control_no_tip_exclusion",
+      "variant": "rollback",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "percentageAtPrint": 0,
+      "sinPropina": true
+    },
+    {
+      "case": "stale_receipt_dispatch",
+      "variant": "rollback",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "currentScreenModelTip": 0,
+      "dispatches": 1,
+      "oldTipArtifactDispatched": true
+    },
+    {
+      "case": "without_then_with",
+      "variant": "rollback",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "initialTip": 13.5,
+      "modelTipAfterWithout": 0,
+      "printedWithoutTip": 0,
+      "printedWithTipAfterward": 0
+    },
+    {
+      "case": "explicit_with_tip",
+      "variant": "rollback",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "configuredPercentage": 10,
+      "percentageAtPrint": 0,
+      "globalOmitAfterChoice": true
+    },
+    {
+      "case": "variable_tip_footer",
+      "variant": "rollback",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "tipPresent": false,
+      "totalPresent": false
+    }
+  ],
+  "source_fragments": [
+    {
+      "fragment": "initial_percentage",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 379,
+      "end_line": 379,
+      "sha256": "f32b471ae7f221ee8dc6e3ca41c4da4bd3be993f6fc01d376dac25ad4e8d3824"
+    },
+    {
+      "fragment": "inherited_omit",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 380,
+      "end_line": 382,
+      "sha256": "8ae06684eeb80327be176e0e7ad38e848a9321228e1771e07207f62ee8906c93"
+    },
+    {
+      "fragment": "explicit_with_tip_callback",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 7626,
+      "end_line": 7630,
+      "sha256": "1e29edc52b6a8da094dc5a3a55b5ebc0f61bf1a43ab1478727a0700b70960757"
+    },
+    {
+      "fragment": "legacy_without_tip_mutation",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4395,
+      "end_line": 4398,
+      "sha256": "4c87bec471278b3b27a29feb32ff6ef904aa2d25364fc5a9b90f8e45ad8892c3"
+    },
+    {
+      "fragment": "unchecked_document_build",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4401,
+      "end_line": 4401,
+      "sha256": "ae9dc9fa0e365ecdef556c4d82ac3abf469575e282ffd27fe1e326fe5202f803"
+    },
+    {
+      "fragment": "driver_dispatch",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4410,
+      "end_line": 4410,
+      "sha256": "fbfb2a5a74d060b786f8ba1471e6da772fd0c3122163474d7d9b6718c2d955d7"
+    }
+  ],
+  "test_seams": [
+    "private buildHeader() made protected in lab only; DB header stubbed",
+    "physical printer replaced by a recording driver",
+    "percentage recovery probe does not execute the calculator"
+  ]
+}

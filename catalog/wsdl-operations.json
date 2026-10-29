@@ -1,0 +1,760 @@
+{
+  "source": "user-authorized AWS QA WSDL",
+  "sha256": "cc65e7411f86df82e59013555ace96b73a45c0ceba5992f1fe3b6454cf708ca4",
+  "operations": [
+    "Caja_Ordenes",
+    "Caja_Ordenes_Envio",
+    "Commit",
+    "GetP_ALMACEN",
+    "GetP_ARCHIVOCONF",
+    "GetP_BANCO",
+    "GetP_BARRIL_BARRA",
+    "GetP_BARRIL_TIPO",
+    "GetP_BONIF",
+    "GetP_CAJA_IMPRESORA",
+    "GetP_CLIENTE",
+    "GetP_CONCEPTOPAGO",
+    "GetP_COREL",
+    "GetP_CORTESIA",
+    "GetP_DEPARTAMENTO",
+    "GetP_DESCUENTO",
+    "GetP_EMPRESA",
+    "GetP_ENCABEZADO_REPORTESHH",
+    "GetP_ESTACION",
+    "GetP_FACTORCONV",
+    "GetP_FRASE",
+    "GetP_GIRO_NEGOCIO",
+    "GetP_IMPRESORA",
+    "GetP_IMPRESORA_MARCA",
+    "GetP_IMPRESORA_MODELO",
+    "GetP_IMPRESORA_REDIRECCION",
+    "GetP_IMPUESTO",
+    "GetP_LINEA",
+    "GetP_LINEA_IMPRESORA",
+    "GetP_MEDIAPAGO",
+    "GetP_MODIFICADOR",
+    "GetP_MODIFICADOR_GRUPO",
+    "GetP_MONEDA",
+    "GetP_MOTIVO_AJUSTE",
+    "GetP_MUNICIPIO",
+    "GetP_NIVELPRECIO",
+    "GetP_NIVELPRECIO_SUCURSAL",
+    "GetP_PARAMEXT",
+    "GetP_PARAMEXT_RUTA",
+    "GetP_PARAMEXT_RUTA_EMP",
+    "GetP_PRODCLASIFMODIF",
+    "GetP_PRODCOMBO",
+    "GetP_PRODIMAGEN",
+    "GetP_PRODMENU",
+    "GetP_PRODMENUOPC",
+    "GetP_PRODMENUOPC_DET",
+    "GetP_PRODPRECIO",
+    "GetP_PRODRECETA",
+    "GetP_PRODUCTO",
+    "GetP_PRODUCTO_TIPO",
+    "GetP_PROVEEDOR",
+    "GetP_REGLA_COSTO",
+    "GetP_RES_GRUPO",
+    "GetP_RES_MESA",
+    "GetP_RES_SALA",
+    "GetP_RUTA",
+    "GetP_SUCURSAL",
+    "GetP_UNIDAD",
+    "GetP_UNIDAD_CONV",
+    "GetP_USGRUPO",
+    "GetP_USGRUPOOPC",
+    "GetP_USOPCION",
+    "GetP_VENDEDOR_ROL",
+    "GetP_VENDEDOR_SUCURSAL",
+    "GetVENDEDORES",
+    "Monitor_despacho_ordenes",
+    "Ordenes_Recepcion",
+    "Pedido_Bitacora",
+    "Pedido_Datos",
+    "Pedido_Direccion",
+    "Pedido_Estado",
+    "Pedidos_Import",
+    "Pedidos_Nuevos",
+    "Pedidos_Recepcion",
+    "facturas_FEL_validacion",
+    "getDT",
+    "getIns",
+    "invProcesado"
+  ],
+  "input_parameters": {
+    "GetP_ARCHIVOCONF": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "RUTA",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "GetP_CLIENTE": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "FECHA",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "GetP_BONIF": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_BANCO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_COREL": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_DESCUENTO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_EMPRESA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "CLAVE",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "GetP_ENCABEZADO_REPORTESHH": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_IMPUESTO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_LINEA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_FACTORCONV": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_FRASE": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_MEDIAPAGO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_MONEDA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_NIVELPRECIO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODCOMBO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODIMAGEN": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODMENU": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODMENUOPC": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODMENUOPC_DET": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODPRECIO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PROVEEDOR": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_SUCURSAL": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODUCTO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_RUTA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_USGRUPO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_USGRUPOOPC": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_USOPCION": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetVENDEDORES": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_CONCEPTOPAGO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PARAMEXT": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PARAMEXT_RUTA": [
+      {
+        "name": "RUTA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PARAMEXT_RUTA_EMP": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "RUTA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_MOTIVO_AJUSTE": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_DEPARTAMENTO": [],
+    "GetP_MUNICIPIO": [],
+    "GetP_PRODUCTO_TIPO": [],
+    "GetP_NIVELPRECIO_SUCURSAL": [
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_REGLA_COSTO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_ALMACEN": [
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_GIRO_NEGOCIO": [
+      {
+        "name": "COD_PAIS",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "Commit": [
+      {
+        "name": "SQL",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "facturas_FEL_validacion": [
+      {
+        "name": "SQL",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "getIns": [
+      {
+        "name": "SQL",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "getDT": [
+      {
+        "name": "SQL",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "invProcesado": [
+      {
+        "name": "IDStock",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "Pedidos_Import": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "Pedidos_Recepcion": [
+      {
+        "name": "SQL",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "Pedido_Estado": [
+      {
+        "name": "Corel",
+        "type": "s:string",
+        "min_occurs": "0"
+      },
+      {
+        "name": "Estado",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "Valor",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "Pedido_Direccion": [
+      {
+        "name": "codigo",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "direccion",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "Pedidos_Nuevos": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "Pedido_Datos": [
+      {
+        "name": "Corel",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "Pedido_Bitacora": [
+      {
+        "name": "Params",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "Caja_Ordenes": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "Caja_Ordenes_Envio": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "VENDEDOR",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "Ordenes_Recepcion": [
+      {
+        "name": "SQL",
+        "type": "s:string",
+        "min_occurs": "0"
+      }
+    ],
+    "GetP_RES_GRUPO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_RES_MESA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_RES_SALA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_ESTACION": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_LINEA_IMPRESORA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_IMPRESORA_MARCA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_IMPRESORA_MODELO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_IMPRESORA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_CAJA_IMPRESORA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_UNIDAD": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_UNIDAD_CONV": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODRECETA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_MODIFICADOR": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_MODIFICADOR_GRUPO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_PRODCLASIFMODIF": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_BARRIL_TIPO": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_BARRIL_BARRA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_CORTESIA": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_VENDEDOR_ROL": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_VENDEDOR_SUCURSAL": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "GetP_IMPRESORA_REDIRECCION": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ],
+    "Monitor_despacho_ordenes": [
+      {
+        "name": "EMPRESA",
+        "type": "s:int",
+        "min_occurs": "1"
+      },
+      {
+        "name": "SUCURSAL",
+        "type": "s:int",
+        "min_occurs": "1"
+      }
+    ]
+  },
+  "scope": "Published interface only; operation presence does not prove authorization or actual use by a configured client"
+}

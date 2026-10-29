@@ -1,0 +1,323 @@
+# Orden
+
+Dominio: `support-catalogs`. Cobertura: **inventariado estático; no observado**.
+
+## Evidencia
+
+- `app/src/main/java/com/dtsgt/mpos/Orden.java:97`; hereda `PBase`.
+
+## Layouts candidatos
+
+- `activity_orden` — `app/src/main/java/com/dtsgt/mpos/Orden.java:217`.
+- `activity_orden_ver` — `app/src/main/java/com/dtsgt/mpos/Orden.java:219`.
+
+## Navegación candidata
+
+- `ListaPromo` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:371`; condiciones en catálogo.
+- `Producto` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:385`; condiciones en catálogo.
+- `DescBon` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:1024`; condiciones en catálogo.
+- `OrdenMenu` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:1095`; condiciones en catálogo.
+- `FacturaRes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:2112`; condiciones en catálogo.
+- `Producto` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:2356`; condiciones en catálogo.
+- `Barriles` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:2398`; condiciones en catálogo.
+- `ResCuentas` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:2421`; condiciones en catálogo.
+- `Nowifi` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:2424`; condiciones en catálogo.
+- `PreciosFb` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:5008`; condiciones en catálogo.
+- `VentaEdit` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:5447`; condiciones en catálogo.
+- `VentaEdit` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:6081`; condiciones en catálogo.
+- `OrdenMenu` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:6084`; condiciones en catálogo.
+- `ModifProd` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:6115`; condiciones en catálogo.
+- `OrdenMenu` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:6190`; condiciones en catálogo.
+- `Clientes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:6894`; condiciones en catálogo.
+- `CliPos` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Orden.java:6899`; condiciones en catálogo.
+
+## Estado global escrito
+
+`EsNivelPrecioDelivery`, `ateninistr`, `atentini`, `barra`, `bonprodcant`, `bonprodid`, `brw`, `cerrarmesero`, `climode`, `cliposflag`, `codigo_cliente`, `combo_cuenta`, `combo_edit`, `delivery`, `descglob`, `descgtotal`, `dval`, `exitflag`, `fbprecioflag`, `gCorreoCliente`, `gDirCliente`, `gNITCliente`, `gNITcf`, `gNombreCliente`, `gstr`, `gstr2`, `idgrres`, `idgrsel`, `idmesatrans`, `idmodgr`, `iniciaVenta`, `limcant`, `menuitemid`, `menuprecio`, `mesero_lista`, `mesero_precuenta`, `newmenuitem`, `nivel`, `nivel_sucursal`, `nocuenta_precuenta`, `nombre_mesero_sel`, `numero_orden`, `ordcorel`, `pprodname`, `prcu_corel`, `prcu_mesa`, `prcu_vend`, `precuenta_cuenta`, `precuenta_modo`, `prodcod`, `prodid`, `prodmenu`, `prodtipo`, `produid`, `promcant`, `promdesc`, `prommodo`, `promprod`, `prw`, `ref1`, `ref2`, `ref3`, `retcant`, `scancliente`, `sinimp`, `timeout`, `tipoplatoid`, `tipoprodcod`, `uidingrediente`, `um`, `umfactor`, `ventalock`, `wsurl`
+
+## Tablas mencionadas estáticamente
+
+`D_BARRIL_TRANS`, `D_FACTURA`, `D_FACTURAP`, `D_ORDEN_BORRADO`, `P_ARCHIVOCONF`, `P_EMPRESA`, `P_FACTORCONV`, `P_IMPUESTO`, `P_ORDEN_NUMERO`, `P_PRODPRECIO`, `P_PRODUCTO`, `P_RES_SESION`, `P_STOCK`, `P_SUCURSAL`, `T_BONITEM`, `T_COMANDA`, `T_COMANDA_SORT`, `T_COMBO`, `T_ORDEN`, `T_ORDENCOMBO`, `T_ORDENCOMBOAD`, `T_ORDENCOMBODET`, `T_ORDENCOMBOPRECIO`, `T_ORDEN_CODIGO`, `T_ORDEN_ING`, `T_ORDEN_NOTA`, `T_VENTA`
+
+## Métodos
+
+- `onCreate` — línea 210.
+- `run` — línea 350.
+- `showPromo` — línea 366.
+- `doExit` — línea 379.
+- `doAdd` — línea 383.
+- `doBarcode` — línea 388.
+- `subItemClick` — línea 412.
+- `setHandlers` — línea 414.
+- `listItems` — línea 626.
+- `fbonListNotas` — línea 634.
+- `fsoListItems` — línea 642.
+- `showItems` — línea 714.
+- `run` — línea 869.
+- `processItem` — línea 883.
+- `processCant` — línea 953.
+- `processMenuItem` — línea 1082.
+- `updateCant` — línea 1099.
+- `processCantMenu` — línea 1119.
+- `updDesc` — línea 1123.
+- `prodPrecio` — línea 1135.
+- `addItem` — línea 1148.
+- `fsoSaveItem` — línea 1258.
+- `addItemMenu` — línea 1283.
+- `addItemVenta` — línea 1388.
+- `addItemVentaOrig` — línea 1501.
+- `updItem` — línea 1620.
+- `updateItemUID` — línea 1650.
+- `updateMenuItemUID` — línea 1738.
+- `delItem` — línea 1780.
+- `registraBorrado` — línea 1820.
+- `delItemIng` — línea 1846.
+- `cerrarCuentas` — línea 1878.
+- `cambiaTipoPlato` — línea 1900.
+- `actualizaOrden` — línea 1929.
+- `fbrsItem` — línea 1937.
+- `fbrsItemList` — línea 1961.
+- `crearVenta` — línea 1992.
+- `crearAvisoPago` — línea 2034.
+- `estadoCuenta` — línea 2053.
+- `finalizarOrden` — línea 2076.
+- `listFamily` — línea 2125.
+- `listProduct` — línea 2173.
+- `menuTools` — línea 2239.
+- `processMenuTools` — línea 2329.
+- `exitBtn` — línea 2432.
+- `numeroOrden` — línea 2480.
+- `numeroOrdenLocal` — línea 2498.
+- `numeroOrdenContingencia` — línea 2527.
+- `numeroOrdenCentral` — línea 2556.
+- `ordenInsert` — línea 2570.
+- `ordenQuery` — línea 2585.
+- `imprimeComanda` — línea 2609.
+- `creaComandas` — línea 2613.
+- `divideComanda` — línea 2649.
+- `generaArchivos` — línea 2767.
+- `divideComandaGrupos` — línea 2890.
+- `generaArchivosGrupos` — línea 3006.
+- `ejecutaImpresion` — línea 3177.
+- `notaArticulo` — línea 3193.
+- `tipoArticulo` — línea 3202.
+- `agregaComanda` — línea 3211.
+- `agregaComanda` — línea 3226.
+- `itemexists` — línea 3242.
+- `actualizaEstado` — línea 3254.
+- `getProd` — línea 3271.
+- `line24` — línea 3284.
+- `procesaComanda` — línea 3295.
+- `fbonList` — línea 3306.
+- `cargaOrdenCombo` — línea 3328.
+- `fbocbCom` — línea 3336.
+- `cancelaComanda` — línea 3357.
+- `generaComandaAnulada` — línea 3371.
+- `generaArchivoAnulado` — línea 3394.
+- `imprimeComandaBT` — línea 3483.
+- `imprimeCancelaComandaBT` — línea 3558.
+- `inputNota` — línea 3595.
+- `onClick` — línea 3615.
+- `onClick` — línea 3626.
+- `aplicaNota` — línea 3632.
+- `splitItem` — línea 3658.
+- `fsoSplitItem` — línea 3719.
+- `evnioBarril` — línea 3731.
+- `ejecutaEnvioTrans` — línea 3741.
+- `envioBarrilTrans` — línea 3753.
+- `generaRegistrosBarril` — línea 3773.
+- `agregaRegistroBarril` — línea 3825.
+- `cantRegBarril` — línea 3855.
+- `addItemBarril` — línea 3865.
+- `exitBarril` — línea 3886.
+- `envioMesa` — línea 3897.
+- `estadoMesa` — línea 3901.
+- `closeAction` — línea 3910.
+- `addItemSqlOrdenCom` — línea 3927.
+- `actualizaEstadoOrden` — línea 3944.
+- `aplicaImpresion` — línea 3959.
+- `wsCallBack` — línea 3978.
+- `aplicaEstadoCaja` — línea 4005.
+- `validaCompleto` — línea 4039.
+- `pendientesPago` — línea 4056.
+- `showMenuCuenta` — línea 4072.
+- `listaOrdenesParaCuenta` — línea 4080.
+- `showMenuCambioCuenta` — línea 4088.
+- `onClick` — línea 4138.
+- `onClick` — línea 4145.
+- `onClick` — línea 4154.
+- `asignaCuenta` — línea 4168.
+- `agregarCuenta` — línea 4192.
+- `agregarCuentaNombre` — línea 4219.
+- `inputCuenta` — línea 4246.
+- `onClick` — línea 4260.
+- `onClick` — línea 4272.
+- `showListaCuentas` — línea 4278.
+- `fboeLista` — línea 4286.
+- `showListaPrecuentas` — línea 4300.
+- `onItemClick` — línea 4345.
+- `onClick` — línea 4364.
+- `articulosCuenta` — línea 4376.
+- `cuentaPendiente` — línea 4390.
+- `cuentaPagada` — línea 4406.
+- `cargaCliente` — línea 4422.
+- `cargaDatosCliente` — línea 4430.
+- `listaMesasParaMover` — línea 4470.
+- `fbrsMovcue` — línea 4478.
+- `onClick` — línea 4515.
+- `fboMovcue` — línea 4528.
+- `fboMovcueList` — línea 4543.
+- `fbocMovcue` — línea 4557.
+- `onClick` — línea 4574.
+- `mueveCuenta` — línea 4588.
+- `Ingredientes` — línea 4646.
+- `onClick` — línea 4655.
+- `onClick` — línea 4662.
+- `onClick` — línea 4676.
+- `listaAdicionales` — línea 4702.
+- `listaIngredientes` — línea 4728.
+- `onItemClick` — línea 4752.
+- `listaIngredientesOld` — línea 4768.
+- `onClick` — línea 4804.
+- `onClick` — línea 4810.
+- `agregaIngrediente` — línea 4825.
+- `agregaIngrediente` — línea 4852.
+- `esIngrediente` — línea 4860.
+- `esIngrediente` — línea 4870.
+- `esModificado` — línea 4880.
+- `tieneIngrediente` — línea 4895.
+- `borrarIngrediente` — línea 4905.
+- `anulaItem` — línea 4926.
+- `fbocAnul` — línea 4972.
+- `cargaPrecios` — línea 5002.
+- `setControls` — línea 5019.
+- `setVisual` — línea 5061.
+- `initValues` — línea 5078.
+- `nombreMesa` — línea 5156.
+- `hasProducts` — línea 5171.
+- `doExit` — línea 5187.
+- `ltrim` — línea 5197.
+- `prodTipo` — línea 5212.
+- `prodTipo` — línea 5221.
+- `prodPorPeso` — línea 5230.
+- `prodRepesaje` — línea 5239.
+- `detectBarcodeScanner` — línea 5248.
+- `prodPrecioBaseImp` — línea 5263.
+- `prodPrecioEsp` — línea 5340.
+- `getDisp` — línea 5367.
+- `cantStock` — línea 5380.
+- `cantProdCombo` — línea 5402.
+- `clearItem` — línea 5426.
+- `openItem` — línea 5430.
+- `totalCredito` — línea 5456.
+- `getURL` — línea 5487.
+- `nivelSucursal` — línea 5507.
+- `setPrintWidth` — línea 5524.
+- `calibraPantalla` — línea 5544.
+- `cuentaPendientePago` — línea 5557.
+- `pantallaHorizontal` — línea 5567.
+- `pendienteImpresion` — línea 5577.
+- `pendientesCuentas` — línea 5596.
+- `existenCuentasPagadas` — línea 5607.
+- `limpiaVenta` — línea 5618.
+- `redireccionarImpresora` — línea 5637.
+- `addBarcode` — línea 5651.
+- `barraProducto` — línea 5662.
+- `agregaProductoIngrediente` — línea 5690.
+- `codigoModificador` — línea 5721.
+- `cierraPantalla` — línea 5741.
+- `numeroid` — línea 5759.
+- `cbNumeroid` — línea 5768.
+- `agregaBloqueo` — línea 5785.
+- `borrarBloqueo` — línea 5801.
+- `cerrarOrden` — línea 5817.
+- `msgAskDel` — línea 5826.
+- `onClick` — línea 5834.
+- `onClick` — línea 5844.
+- `msgAskDelCom` — línea 5853.
+- `onClick` — línea 5861.
+- `onClick` — línea 5871.
+- `msgAskAdd` — línea 5880.
+- `onClick` — línea 5888.
+- `onClick` — línea 5894.
+- `msgAskComanda` — línea 5903.
+- `msgAskAvisoPago` — línea 5946.
+- `onClick` — línea 5954.
+- `onClick` — línea 5960.
+- `msgInfo` — línea 5969.
+- `onClick` — línea 5978.
+- `msgAskLimit` — línea 5987.
+- `onClick` — línea 5996.
+- `onClick` — línea 6002.
+- `msgAskState` — línea 6011.
+- `onClick` — línea 6019.
+- `onClick` — línea 6043.
+- `showItemPopMenu` — línea 6054.
+- `onItemClick` — línea 6073.
+- `onClick` — línea 6129.
+- `showItemPopMenuLock` — línea 6143.
+- `onItemClick` — línea 6158.
+- `onClick` — línea 6201.
+- `showTipoPlatoMenu` — línea 6214.
+- `onItemClick` — línea 6227.
+- `onClick` — línea 6241.
+- `showSeleccionTipoPlato` — línea 6255.
+- `onItemClick` — línea 6268.
+- `onClick` — línea 6282.
+- `msgAskDividir` — línea 6296.
+- `onClick` — línea 6302.
+- `onClick` — línea 6312.
+- `msgAskCuentas` — línea 6318.
+- `onClick` — línea 6324.
+- `onClick` — línea 6330.
+- `msgAskCuentas2` — línea 6336.
+- `onClick` — línea 6342.
+- `onClick` — línea 6348.
+- `msgBorrarOrden` — línea 6355.
+- `onClick` — línea 6361.
+- `onClick` — línea 6367.
+- `msgBorrarOrden2` — línea 6374.
+- `onClick` — línea 6380.
+- `onClick` — línea 6387.
+- `aplicaNota2` — línea 6394.
+- `inputMesa` — línea 6409.
+- `onClick` — línea 6423.
+- `onClick` — línea 6434.
+- `showMenuCuenta2` — línea 6440.
+- `onClick` — línea 6471.
+- `onClick` — línea 6478.
+- `showListaCuentas2` — línea 6492.
+- `onItemClick` — línea 6511.
+- `onClick` — línea 6523.
+- `showListaCuentasOrig` — línea 6545.
+- `onItemClick` — línea 6578.
+- `onClick` — línea 6590.
+- `msgAskImpresora` — línea 6612.
+- `onClick` — línea 6618.
+- `onClick` — línea 6624.
+- `showListaImpresoras` — línea 6630.
+- `onItemClick` — línea 6647.
+- `onClick` — línea 6658.
+- `showListaImpresoras2` — línea 6671.
+- `onItemClick` — línea 6683.
+- `onClick` — línea 6694.
+- `validaSupervisor` — línea 6707.
+- `onClick` — línea 6727.
+- `onClick` — línea 6734.
+- `msgAskPrecuentaSinWifi` — línea 6767.
+- `onClick` — línea 6773.
+- `onClick` — línea 6779.
+- `msgSync` — línea 6785.
+- `onClick` — línea 6792.
+- `onClick` — línea 6798.
+- `msgAskAct` — línea 6807.
+- `onClick` — línea 6815.
+- `onClick` — línea 6821.
+- `onResume` — línea 6834.
+- `run` — línea 6888.
+- `onPause` — línea 6971.
+- `onBackPressed` — línea 6979.
+
+## Para acreditar aprendizaje operativo
+
+Registrar rol, país, parámetros, precondiciones, acción, transición, resultado y evidencia sanitizada. No convertir esta lista estática en una afirmación de pruebas end-to-end.

@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "variant": "guarded",
+  "source_commit": "bd94c90c6b097887a1c3d75ef6f70351bd031921",
+  "time_utc": "2026-10-29T15:43:16.592161+00:00",
+  "experiment_kind": "Android component contracts; extracted source probes + production receipt generator + injected failures",
+  "country_fixture": "HN",
+  "dedicated_avd": true,
+  "network_permission": false,
+  "apk_sha256": "54645f41a988129bdd7a0dc2b1375f56137255b3ec3836c83a11eb7da7e002fc",
+  "duration_seconds": 127.16,
+  "statuses": {
+    "fixedTipFooterStillWorks": "pass",
+    "documentExceptionCannotReportSuccess": "pass",
+    "explicitChoiceKeepsExclusions": "pass",
+    "failedBuildCannotDispatchOlderReceipt": "pass",
+    "tipNotLostAfterWithoutThenWith": "pass",
+    "explicitWithTipRecoversInheritedPercentage": "pass",
+    "variableTipAppearsInFooter": "pass"
+  },
+  "observations": [
+    {
+      "case": "control_fixed_tip_footer",
+      "variant": "guarded",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "tipPresent": true,
+      "totalPresent": true
+    },
+    {
+      "case": "document_exception",
+      "variant": "guarded",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "builderReportedSuccess": false
+    },
+    {
+      "case": "control_no_tip_exclusion",
+      "variant": "guarded",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "percentageAtPrint": 0,
+      "sinPropina": true
+    },
+    {
+      "case": "stale_receipt_dispatch",
+      "variant": "guarded",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "currentScreenModelTip": 0,
+      "dispatches": 0,
+      "oldTipArtifactDispatched": false
+    },
+    {
+      "case": "without_then_with",
+      "variant": "guarded",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "initialTip": 13.5,
+      "modelTipAfterWithout": 13.5,
+      "printedWithoutTip": 0,
+      "printedWithTipAfterward": 13.5
+    },
+    {
+      "case": "explicit_with_tip",
+      "variant": "guarded",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "configuredPercentage": 10,
+      "percentageAtPrint": 10,
+      "globalOmitAfterChoice": false
+    },
+    {
+      "case": "variable_tip_footer",
+      "variant": "guarded",
+      "sdk": 37,
+      "countryFixture": "HN",
+      "tipPresent": true,
+      "totalPresent": true
+    }
+  ],
+  "source_fragments": [
+    {
+      "fragment": "initial_percentage",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 375,
+      "end_line": 375,
+      "sha256": "f32b471ae7f221ee8dc6e3ca41c4da4bd3be993f6fc01d376dac25ad4e8d3824"
+    },
+    {
+      "fragment": "inherited_omit",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 376,
+      "end_line": 378,
+      "sha256": "8ae06684eeb80327be176e0e7ad38e848a9321228e1771e07207f62ee8906c93"
+    },
+    {
+      "fragment": "explicit_with_tip_callback",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 7659,
+      "end_line": 7664,
+      "sha256": "58bb072456c35bbcb098d29d89c1d33a0f94bef68697ddc2e1b4c007dd933145"
+    },
+    {
+      "fragment": "guarded_document_gate",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4368,
+      "end_line": 4389,
+      "sha256": "c654b2257d44429f178ea97e4f9ea75c41b5da017aec0445080e85b899f97352"
+    },
+    {
+      "fragment": "guarded_explicit_choice",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4352,
+      "end_line": 4366,
+      "sha256": "e84ee3fe62b6e36b330578baebfd762d63a59687ea59c70c98ba319e55c5b656"
+    },
+    {
+      "fragment": "document_gate_call",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4431,
+      "end_line": 4431,
+      "sha256": "be3e1fa2761e4e69f9a21c5fc117d315740c76dba1c349c79d797fdd2d31e5bc"
+    },
+    {
+      "fragment": "document_gate_return",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4432,
+      "end_line": 4432,
+      "sha256": "41c5c3f3a6d7026e51fa1d2c8e7b95ce8a318e009ed2ee023ed524ee13bcb8cc"
+    },
+    {
+      "fragment": "driver_dispatch",
+      "file": "app/src/main/java/com/dtsgt/mpos/FacturaRes.java",
+      "line": 4441,
+      "end_line": 4441,
+      "sha256": "fbfb2a5a74d060b786f8ba1471e6da772fd0c3122163474d7d9b6718c2d955d7"
+    }
+  ],
+  "test_seams": [
+    "private buildHeader() made protected in lab only; DB header stubbed",
+    "physical printer replaced by a recording driver",
+    "percentage recovery probe does not execute the calculator"
+  ]
+}

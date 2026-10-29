@@ -1,0 +1,279 @@
+# Menu
+
+Dominio: `sync-configuration`. Cobertura: **inventariado estático; no observado**.
+
+## Evidencia
+
+- `app/src/main/java/com/dtsgt/mpos/Menu.java:87`; hereda `PBase`.
+
+## Layouts candidatos
+
+- `activity_menu` — `app/src/main/java/com/dtsgt/mpos/Menu.java:134`.
+
+## Navegación candidata
+
+- `UtilPrint` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:356`; condiciones en catálogo.
+- `Venta` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:382`; condiciones en catálogo.
+- `FinDia` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:435`; condiciones en catálogo.
+- `CierreInicio` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:467`; condiciones en catálogo.
+- `Venta` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:489`; condiciones en catálogo.
+- `Reimpresion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:550`; condiciones en catálogo.
+- `Anulacion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:611`; condiciones en catálogo.
+- `WSEnv` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:639`; condiciones en catálogo.
+- `WSRec` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:644`; condiciones en catálogo.
+- `ObjProd` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:713`; condiciones en catálogo.
+- `ObjProd` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:725`; condiciones en catálogo.
+- `ObjRuta` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:737`; condiciones en catálogo.
+- `ObjRuta` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:749`; condiciones en catálogo.
+- `ConsPrecio` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:767`; condiciones en catálogo.
+- `Existencias` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:863`; condiciones en catálogo.
+- `ListaInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:875`; condiciones en catálogo.
+- `ListaInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:883`; condiciones en catálogo.
+- `ListaInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:891`; condiciones en catálogo.
+- `ListaCompras` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:901`; condiciones en catálogo.
+- `ListaInventarioT` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:911`; condiciones en catálogo.
+- `InvTransAlm` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:918`; condiciones en catálogo.
+- `ListaInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:927`; condiciones en catálogo.
+- `ListaBarril` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:934`; condiciones en catálogo.
+- `ListaInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:942`; condiciones en catálogo.
+- `InvAnular` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1020`; condiciones en catálogo.
+- `InicioInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1057`; condiciones en catálogo.
+- `InvCentral` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1170`; condiciones en catálogo.
+- `Tablas` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1270`; condiciones en catálogo.
+- `MarcarFacturas` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1294`; condiciones en catálogo.
+- `UtilPrint` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1333`; condiciones en catálogo.
+- `InstalaVersion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1338`; condiciones en catálogo.
+- `com.dts.mposupd` (external_app_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1346`; condiciones en catálogo.
+- `InicioInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1428`; condiciones en catálogo.
+- `EnvioNube` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:1438`; condiciones en catálogo.
+- `MantConfig` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2134`; condiciones en catálogo.
+- `Lista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2136`; condiciones en catálogo.
+- `MantCorel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2138`; condiciones en catálogo.
+- `MantRol` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2140`; condiciones en catálogo.
+- `MantRepCierre` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2142`; condiciones en catálogo.
+- `MantImpRedir` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2147`; condiciones en catálogo.
+- `Lista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2149`; condiciones en catálogo.
+- `SalaDis` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2190`; condiciones en catálogo.
+- `MantConfigRes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2192`; condiciones en catálogo.
+- `Lista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2194`; condiciones en catálogo.
+- `MantConfig` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2236`; condiciones en catálogo.
+- `Lista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2238`; condiciones en catálogo.
+- `Lista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2240`; condiciones en catálogo.
+- `Reportes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2335`; condiciones en catálogo.
+- `Reportes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2341`; condiciones en catálogo.
+- `Reportes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2433`; condiciones en catálogo.
+- `DepositoLista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2487`; condiciones en catálogo.
+- `CajaPagosLista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2492`; condiciones en catálogo.
+- `CajaFDIni` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2537`; condiciones en catálogo.
+- `CajaFD` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2538`; condiciones en catálogo.
+- `Caja` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2540`; condiciones en catálogo.
+- `Caja` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2555`; condiciones en catálogo.
+- `SoporteEquNuevo` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2619`; condiciones en catálogo.
+- `SoporteEquViejo` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2622`; condiciones en catálogo.
+- `SoporteCorel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2639`; condiciones en catálogo.
+- `SoporteBloqueo` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2647`; condiciones en catálogo.
+- `ObjLista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2957`; condiciones en catálogo.
+- `InicioInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:2998`; condiciones en catálogo.
+- `CajaFD` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:3108`; condiciones en catálogo.
+- `Venta` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:3116`; condiciones en catálogo.
+- `WSTest` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:3617`; condiciones en catálogo.
+- `context.getPackageName` (external_app_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:3987`; condiciones en catálogo.
+- `Venta` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:4134`; condiciones en catálogo.
+- `WSRec` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:4167`; condiciones en catálogo.
+- `FELVerificacion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:4403`; condiciones en catálogo.
+- `FELContingenciaSV` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:4405`; condiciones en catálogo.
+- `FELFacturaPana` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Menu.java:4407`; condiciones en catálogo.
+
+## Estado global escrito
+
+`InvCompSend`, `QRCodeStr`, `auto_run_venta`, `autocom`, `autostart_venta`, `cajaid`, `cierre_ini_flag`, `cliente`, `climode`, `cliposflag`, `codigo_cliente`, `corelZ`, `dev`, `devfindia`, `exitflag`, `fbprecioflag`, `felcorel`, `feluuid`, `forcedclose`, `gDirCliente`, `gNITCliente`, `gNombreCliente`, `idalm`, `idalmpred`, `impresion_comanda`, `ingreso_mesero`, `inic_inv_auto`, `iniciaVenta`, `inicio_caja_correcto`, `invcen_alm`, `invcent_cod`, `invcent_tipo`, `invregular`, `lastDate`, `listaedit`, `mantid`, `nivel_sucursal`, `nom_alm`, `objnivel`, `objsuper`, `preimpresion`, `prndrvmsg`, `prw`, `recibir_automatico`, `reinicia_venta`, `reportid`, `rutapos`, `rutatipo`, `rutatipog`, `tipo`, `titReport`, `validDate`, `ventalock`
+
+## Tablas mencionadas estáticamente
+
+`D_CIERRE`, `D_FACTURA`, `D_FACTURAC`, `D_FACTURAD`, `D_FACTURAF`, `D_FACTURAHN`, `D_FACTURAP`, `D_FACTURAPR`, `D_FACTURAR`, `D_FACTURAS`, `D_FACTURA_FEL`, `D_FEL_BITACORA`, `D_FEL_ERROR`, `D_MOV`, `D_MOVD`, `P_ARCHIVOCONF`, `P_CAJACIERRE`, `P_CLIENTE`, `P_COREL`, `P_EMPRESA`, `P_MODO_EMERGENCIA`, `P_ORDEN_NUMERO`, `P_PARAMSOP`, `P_STOCK`, `P_STOCK_ALMACEN`, `P_STOCK_INVENTARIO_ENC`, `T_BARRA_BONIF`, `T_ORDEN_CODIGO`
+
+## Métodos
+
+- `onCreate` — línea 129.
+- `setHandlers` — línea 223.
+- `listItems` — línea 249.
+- `apagar` — línea 313.
+- `showMenuItem` — línea 325.
+- `procInicioCaja` — línea 464.
+- `reiniciaVenta` — línea 474.
+- `showPrintMenuTodo` — línea 500.
+- `menuImprDoc` — línea 546.
+- `showVoidMenuTodo` — línea 562.
+- `onItemClick` — línea 575.
+- `onClick` — línea 596.
+- `menuAnulDoc` — línea 609.
+- `showMenuCom` — línea 622.
+- `showConsMenu` — línea 665.
+- `menuObjProd` — línea 709.
+- `menuObjFamilia` — línea 721.
+- `menuObjRuta` — línea 733.
+- `menuObjCobro` — línea 745.
+- `menuInvBod` — línea 757.
+- `menuPrecios` — línea 765.
+- `showInvMenuVenta` — línea 779.
+- `menuInventarioOpc` — línea 846.
+- `menuExist` — línea 860.
+- `menuRecarga` — línea 870.
+- `menuAjuste` — línea 880.
+- `menuInvIni` — línea 888.
+- `menuCompra` — línea 898.
+- `menuTraslado` — línea 908.
+- `menuIngresoAlmacen` — línea 916.
+- `menuEgreso` — línea 923.
+- `menuBarril` — línea 932.
+- `menuTomaInventario` — línea 939.
+- `validaSuperInvCent` — línea 949.
+- `validaSuperAnulInv` — línea 993.
+- `menuInvCentral` — línea 1037.
+- `validaInventarioCentral` — línea 1064.
+- `consultaInvCentral` — línea 1096.
+- `callbackInvCent` — línea 1122.
+- `fbsInvCent` — línea 1155.
+- `menuVersInventario` — línea 1176.
+- `validaSupervisorInventario` — línea 1181.
+- `showInvMenuUtils` — línea 1230.
+- `configuracionImpresora` — línea 1332.
+- `actualizaVersion` — línea 1336.
+- `actualizaVersionOld` — línea 1344.
+- `askCambUsuario` — línea 1354.
+- `sendDB` — línea 1373.
+- `inicioInventario` — línea 1422.
+- `uploadDB` — línea 1437.
+- `infoSystem` — línea 1441.
+- `actualizarCont` — línea 1493.
+- `validaCorel` — línea 1546.
+- `inicioDia` — línea 1571.
+- `onClick` — línea 1590.
+- `Limpiar_Tablas_No_Criticas` — línea 1622.
+- `run` — línea 1636.
+- `limpiaTablas` — línea 1652.
+- `msgAskValor` — línea 1715.
+- `procesaInicioCaja` — línea 1740.
+- `estadoBluTooth` — línea 1773.
+- `borraInventario` — línea 1796.
+- `validaSuperInventario` — línea 1822.
+- `validaSuperLimpia` — línea 1866.
+- `validaSuperNumOrden` — línea 1910.
+- `reiiniciaNumeroOrden` — línea 1954.
+- `callBackNumOrden` — línea 1968.
+- `doSendUID` — línea 1976.
+- `sendUID` — línea 1980.
+- `repetirCierreDialog` — línea 2013.
+- `repetirCierre` — línea 2035.
+- `showMantMenu` — línea 2062.
+- `showMantRestMenu` — línea 2165.
+- `showMantCliente` — línea 2210.
+- `onClick` — línea 2248.
+- `showReportMenu` — línea 2264.
+- `listaCierres` — línea 2357.
+- `onClick` — línea 2381.
+- `onItemClick` — línea 2388.
+- `validaSupervisorFormaPago` — línea 2406.
+- `showCajaMenu` — línea 2455.
+- `onClick` — línea 2519.
+- `validaCaja` — línea 2532.
+- `msgAskMesas` — línea 2547.
+- `showMenuSoporte` — línea 2567.
+- `menuCambioEquipo` — línea 2603.
+- `menuCorrelativos` — línea 2637.
+- `menuBloqueoEquipo` — línea 2645.
+- `menuCodigoEquipo` — línea 2653.
+- `soporteCodigoIngreso` — línea 2661.
+- `cbSoporteCodigoIngreso` — línea 2674.
+- `onClick` — línea 2702.
+- `onClick` — línea 2720.
+- `showEmergMenu` — línea 2739.
+- `onClick` — línea 2771.
+- `modoSinRed` — línea 2784.
+- `activarSinRed` — línea 2798.
+- `desactivarSinRed` — línea 2829.
+- `activarItem` — línea 2862.
+- `restaurarItem` — línea 2884.
+- `doLogOff` — línea 2899.
+- `validaModo` — línea 2904.
+- `showObjetivosMenu` — línea 2916.
+- `validaInicioInv` — línea 2974.
+- `fbInvCallBack` — línea 2982.
+- `existenciasFirebase` — línea 3007.
+- `versionInvFinish` — línea 3045.
+- `addValueListener` — línea 3066.
+- `onDataChange` — línea 3071.
+- `onCancelled` — línea 3083.
+- `valmodulo` — línea 3097.
+- `valmenu` — línea 3101.
+- `CierreZ` — línea 3105.
+- `VentaDate` — línea 3111.
+- `valida` — línea 3119.
+- `validaVenta` — línea 3197.
+- `validaCorelSV` — línea 3286.
+- `validaCorelCredito` — línea 3292.
+- `validaCorelCredito2` — línea 3377.
+- `validaCorelTicket` — línea 3461.
+- `cajaCerrada` — línea 3545.
+- `setPrintWidth` — línea 3564.
+- `getPrinterType` — línea 3585.
+- `doWSTest` — línea 3616.
+- `addMenuItem` — línea 3620.
+- `impresoraInstalada` — línea 3628.
+- `isPackageInstalled` — línea 3666.
+- `validaFacturas` — línea 3676.
+- `enviaAvizo` — línea 3716.
+- `enviaImpresion` — línea 3768.
+- `imprimirCierre` — línea 3812.
+- `imprimirCierreOrig` — línea 3849.
+- `writeCorelLog` — línea 3884.
+- `pantallaHorizontal` — línea 3893.
+- `autoLoginMesero` — línea 3903.
+- `tieneAlmacenes` — línea 3913.
+- `pendienteFEL` — línea 3937.
+- `reinica` — línea 3965.
+- `restartApp` — línea 3986.
+- `showUIMsg` — línea 4003.
+- `run` — línea 4006.
+- `run` — línea 4009.
+- `validaSupervisor` — línea 4021.
+- `msgAskValid` — línea 4074.
+- `msgAskIniciarCaja` — línea 4082.
+- `msgAskValidUltZ` — línea 4106.
+- `msgAskValidaCierre` — línea 4117.
+- `msgAskImpresora` — línea 4127.
+- `onClick` — línea 4132.
+- `msgAskDatabase` — línea 4142.
+- `msgAskActualizar` — línea 4151.
+- `msgAskActualizar2` — línea 4160.
+- `msgAskSend` — línea 4178.
+- `msgAskUltimoCierre` — línea 4188.
+- `msgAskImprimir` — línea 4198.
+- `msgAskLimpiar` — línea 4208.
+- `msgAskEnvioTamano` — línea 4217.
+- `msgAskCF` — línea 4228.
+- `msgAskCorregirFechas` — línea 4249.
+- `msgAskCorregirFechasTop10` — línea 4268.
+- `msgAskCorregirFechasList` — línea 4277.
+- `msgAskCorregirFechas2` — línea 4296.
+- `msgAskCorregirFechas_orig` — línea 4328.
+- `msgAskEmerg` — línea 4367.
+- `msgAskEmerg2` — línea 4378.
+- `msgAskFEL` — línea 4390.
+- `msgAskBorrarInventario` — línea 4420.
+- `msgAskBorrarInventario2` — línea 4429.
+- `msgAskInvInic` — línea 4438.
+- `msgAskVersInv` — línea 4447.
+- `msgAskInvCent` — línea 4456.
+- `msgAskAnulInv` — línea 4465.
+- `msgAskUID` — línea 4474.
+- `msgAskCierre` — línea 4483.
+- `msgAskCierre2` — línea 4492.
+- `msgAskCierre3` — línea 4502.
+- `onResume` — línea 4516.
+- `onDestroy` — línea 4581.
+- `onBackPressed` — línea 4592.
+
+## Para acreditar aprendizaje operativo
+
+Registrar rol, país, parámetros, precondiciones, acción, transición, resultado y evidencia sanitizada. No convertir esta lista estática en una afirmación de pruebas end-to-end.

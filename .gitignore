@@ -1,0 +1,17 @@
+.venv/
+.local/
+__pycache__/
+*.pyc
+*.db
+*.sqlite*
+*.apk
+*.aab
+*.jks
+*.keystore
+google-services.json
+local.properties
+*.log
+*.png
+*.jpg
+*.zip
+*.hprof

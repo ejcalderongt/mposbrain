@@ -1,0 +1,380 @@
+# Venta
+
+Dominio: `sales-orders`. Cobertura: **inventariado estático; no observado**.
+
+## Evidencia
+
+- `app/src/main/java/com/dtsgt/mpos/Venta.java:132`; hereda `PBase`.
+
+## Layouts candidatos
+
+- `activity_venta` — `app/src/main/java/com/dtsgt/mpos/Venta.java:249`.
+- `activity_venta_port` — `app/src/main/java/com/dtsgt/mpos/Venta.java:252`.
+- `activity_venta_ver` — `app/src/main/java/com/dtsgt/mpos/Venta.java:254`.
+
+## Navegación candidata
+
+- `Clientes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:390`; condiciones en catálogo.
+- `CliPosSVSel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:400`; condiciones en catálogo.
+- `CliPosPan` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:402`; condiciones en catálogo.
+- `ListaPromo` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:458`; condiciones en catálogo.
+- `ProdMenuCant` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:1321`; condiciones en catálogo.
+- `ProdMenu` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:1323`; condiciones en catálogo.
+- `CliPosSVSel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:1941`; condiciones en catálogo.
+- `CliPosPan` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:1943`; condiciones en catálogo.
+- `FacturaRes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2008`; condiciones en catálogo.
+- `ProductoLista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2875`; condiciones en catálogo.
+- `Clientes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2893`; condiciones en catálogo.
+- `CliPosSVSel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2898`; condiciones en catálogo.
+- `CliPosPan` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2900`; condiciones en catálogo.
+- `CliPosSVSel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2923`; condiciones en catálogo.
+- `CliPosPan` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2925`; condiciones en catálogo.
+- `ValidaClave` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2940`; condiciones en catálogo.
+- `SalonCajaIngreso` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2950`; condiciones en catálogo.
+- `ValidaClave` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2953`; condiciones en catálogo.
+- `ImpresMsg` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2958`; condiciones en catálogo.
+- `ProdExist` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2965`; condiciones en catálogo.
+- `CuponInfo` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2968`; condiciones en catálogo.
+- `CuponCaptura` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2972`; condiciones en catálogo.
+- `CuponBillPuntos` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2981`; condiciones en catálogo.
+- `CuponPuntos` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2983`; condiciones en catálogo.
+- `CuponVirEnvio` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2988`; condiciones en catálogo.
+- `SalonMesas` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2992`; condiciones en catálogo.
+- `SalonRecepcion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:2996`; condiciones en catálogo.
+- `EnvioNube` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3183`; condiciones en catálogo.
+- `Nowifi` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3187`; condiciones en catálogo.
+- `DescMonto` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3242`; condiciones en catálogo.
+- `DescMonto` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3303`; condiciones en catálogo.
+- `CajaFD` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3336`; condiciones en catálogo.
+- `CierreX` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3403`; condiciones en catálogo.
+- `Reportes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3408`; condiciones en catálogo.
+- `Reportes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3411`; condiciones en catálogo.
+- `Reimpresion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3524`; condiciones en catálogo.
+- `DomPedidos` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3537`; condiciones en catálogo.
+- `DomEntrega` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3546`; condiciones en catálogo.
+- `DomImport` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3558`; condiciones en catálogo.
+- `WSRec` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3580`; condiciones en catálogo.
+- `Anulacion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:3597`; condiciones en catálogo.
+- `PreciosFb` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:4863`; condiciones en catálogo.
+- `Exist` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:4918`; condiciones en catálogo.
+- `ListaInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:4928`; condiciones en catálogo.
+- `ListaInventario` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:4936`; condiciones en catálogo.
+- `DescBon` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:5123`; condiciones en catálogo.
+- `DescBon` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:5174`; condiciones en catálogo.
+- `DescBon` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:5222`; condiciones en catálogo.
+- `CuponFisico` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:5788`; condiciones en catálogo.
+- `CuponLista` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:5910`; condiciones en catálogo.
+- `CuponFisicoEnvios` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:5928`; condiciones en catálogo.
+- `CuponEnvios` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:5937`; condiciones en catálogo.
+- `CuponVirCriteria` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6125`; condiciones en catálogo.
+- `CuponBillPuntos` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6155`; condiciones en catálogo.
+- `TallaColorExist` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6244`; condiciones en catálogo.
+- `VentaEdit` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6718`; condiciones en catálogo.
+- `ProdMenuCant` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6732`; condiciones en catálogo.
+- `ProdMenu` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6734`; condiciones en catálogo.
+- `DescMonto` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6748`; condiciones en catálogo.
+- `ModifVenta` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6757`; condiciones en catálogo.
+- `FELVerificacion` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6806`; condiciones en catálogo.
+- `FELContingenciaSV` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6808`; condiciones en catálogo.
+- `FELFacturaPana` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:6810`; condiciones en catálogo.
+- `Reportes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:7012`; condiciones en catálogo.
+- `Cobro` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:7192`; condiciones en catálogo.
+- `ResMesero` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:7926`; condiciones en catálogo.
+- `CliPosGTSel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:8302`; condiciones en catálogo.
+- `Clientes` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:8455`; condiciones en catálogo.
+- `CliPosSVSel` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:8462`; condiciones en catálogo.
+- `CliPosPan` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:8464`; condiciones en catálogo.
+- `DescMonto` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:8579`; condiciones en catálogo.
+- `ValidaClave` (intent_candidate) — `app/src/main/java/com/dtsgt/mpos/Venta.java:8590`; condiciones en catálogo.
+
+## Estado global escrito
+
+`EsNivelPrecioDelivery`, `QRCodeStr`, `ateninistr`, `atentini`, `autocom`, `autostart_venta`, `auxCantVenta`, `barra`, `bonbarid`, `bonbarprod`, `bonprodcant`, `bonprodid`, `brw`, `cajaid`, `cerrarmesero`, `cierra_clave`, `cli_depto`, `cli_muni`, `cliente`, `cliente_dom`, `climode`, `cliposflag`, `closePedido`, `comquickrec`, `cred_dia`, `cred_lim`, `credito`, `cupon_cant`, `cupon_saldo`, `delivery`, `desc_acceso`, `desc_tipo_apl`, `descadd`, `descglob`, `descgtotal`, `dom_total`, `domicilio`, `dval`, `dvbrowse`, `equipo_activo`, `exitflag`, `fbprecioflag`, `felcorel`, `feluuid`, `findiaactivo`, `forcedclose`, `gCorreoCliente`, `gNITCliente`, `gstr`, `idalm`, `idalmpred`, `idcombo`, `idmesero`, `idmodgr`, `impresion_comanda`, `iniciaVenta`, `inicio_caja_correcto`, `invregular`, `lastDate`, `limcant`, `listaedit`, `media`, `menuitemid`, `mesero_precuenta`, `meserodir`, `modo_domicilio`, `modo_envio`, `modo_upd_venta`, `modoadmin`, `modoclave`, `mododocesa`, `newmenuitem`, `nit_tipo`, `nivel`, `nom_alm`, `numero_orden`, `peNoMasVendidos`, `peZonaFranca`, `pedido_dom_import`, `pprodname`, `preccombo`, `prod_tc_exist`, `prodcod`, `prodid`, `prodmenu`, `prodtipo`, `produid`, `promcant`, `promdesc`, `prommodo`, `promprod`, `ref1`, `ref2`, `ref3`, `reinicia_venta`, `reportid`, `retcant`, `salon_recep`, `scancliente`, `sel_nivel_prec`, `sin_propina`, `sinimp`, `tar_virt_cod`, `timeout`, `tipo`, `tipoprodcod`, `titReport`, `total_factura_previo_descuento`, `um`, `umfactor`, `validDate`, `wsurl`
+
+## Tablas mencionadas estáticamente
+
+`D_BILLETERA_PAGO`, `D_CUPON_ACTIV`, `D_FACTURA`, `D_FACTURAP`, `D_FACT_LOG`, `D_LEAL_CAMBIO`, `D_LEAL_CUPON`, `D_PEDIDOCOMBO`, `D_PEDIDOD`, `P_ARCHIVOCONF`, `P_CLIENTE`, `P_COREL`, `P_FACTORCONV`, `P_IMPUESTO`, `P_NIVELPRECIO`, `P_NIVELPRECIO_SUCURSAL`, `P_ORDEN_NUMERO`, `P_PRODPRECIO`, `P_PRODUCTO`, `P_PRODUCTO_TALLA_COLOR`, `P_RUTA`, `P_STOCK`, `P_SUCURSAL`, `T_AI_MASVENDIDOS`, `T_BARRA`, `T_BARRA_BONIF`, `T_BONIFFALT`, `T_BONITEM`, `T_COMANDA`, `T_COMBO`, `T_CUPON`, `T_DESC`, `T_LIC_ESTADO`, `T_ORDEN`, `T_ORDENCOMBO`, `T_ORDENCOMBOAD`, `T_ORDENCOMBODET`, `T_ORDENCOMBOPRECIO`, `T_ORDEN_CODIGO`, `T_PAGO`, `T_PRODMENU`, `T_VENTA`, `T_VENTA_COR`, `T_VENTA_HORA`, `T_VENTA_ING`, `T_VENTA_MOD`, `T_VENTA_TALLA`, `VENDEDORES`
+
+## Métodos
+
+- `onCreate` — línea 243.
+- `run` — línea 344.
+- `onActivityResult` — línea 431.
+- `doFocus` — línea 446.
+- `showPromo` — línea 453.
+- `doBarcode` — línea 466.
+- `doNivel` — línea 474.
+- `doKey` — línea 478.
+- `subItemClick` — línea 488.
+- `doFocusScan` — línea 491.
+- `doEnvio` — línea 495.
+- `doMasVend` — línea 507.
+- `doMasVendLista` — línea 511.
+- `setHandlers` — línea 515.
+- `onItemClick` — línea 522.
+- `onLongItemClick` — línea 579.
+- `afterTextChanged` — línea 586.
+- `beforeTextChanged` — línea 588.
+- `onTextChanged` — línea 590.
+- `run` — línea 599.
+- `onItemClick` — línea 611.
+- `onLongItemClick` — línea 628.
+- `onItemClick` — línea 636.
+- `onLongItemClick` — línea 641.
+- `onItemClick` — línea 667.
+- `onItemClick` — línea 684.
+- `onItemClick` — línea 701.
+- `listItems` — línea 741.
+- `processItem` — línea 901.
+- `processItem` — línea 983.
+- `processItemTCBarra` — línea 1027.
+- `processProdBarra` — línea 1089.
+- `setCant` — línea 1120.
+- `processCant` — línea 1145.
+- `actualizar_descuento_por_linea_otros_items` — línea 1272.
+- `processMenuItem` — línea 1296.
+- `updateCant` — línea 1333.
+- `processCantMenu` — línea 1355.
+- `updDesc` — línea 1359.
+- `updDescMonto` — línea 1397.
+- `prodPrecio` — línea 1412.
+- `addItem` — línea 1440.
+- `addItemMenu` — línea 1594.
+- `updItem` — línea 1687.
+- `updItemMonto` — línea 1746.
+- `updateItemUID` — línea 1801.
+- `updateMenuItemUID` — línea 1874.
+- `finalizarOrden` — línea 1911.
+- `cambiaPrecioConImpuesto` — línea 2021.
+- `cambiaPrecioSinImpuesto` — línea 2033.
+- `cambiaPrecio` — línea 2063.
+- `aplicaCortesia` — línea 2075.
+- `borrarCortesia` — línea 2108.
+- `setVisual` — línea 2125.
+- `initValues` — línea 2141.
+- `applyItem` — línea 2305.
+- `addBarcode` — línea 2349.
+- `actualizaTotalesBarra` — línea 2360.
+- `barraProducto` — línea 2395.
+- `borraBarra` — línea 2452.
+- `cantBolsa` — línea 2488.
+- `cantBonif` — línea 2502.
+- `cantFalt` — línea 2516.
+- `removerBonif` — línea 2530.
+- `reportBonif` — línea 2577.
+- `listFamily` — línea 2596.
+- `listProduct` — línea 2634.
+- `menuItems` — línea 2743.
+- `processMenuItems` — línea 2864.
+- `menuTools` — línea 3004.
+- `processMenuTools` — línea 3124.
+- `validaSupervisor` — línea 3194.
+- `onClick` — línea 3214.
+- `onClick` — línea 3221.
+- `validaSuperDescuento` — línea 3269.
+- `onClick` — línea 3289.
+- `onClick` — línea 3296.
+- `cierreCaja` — línea 3322.
+- `showReportMenu` — línea 3354.
+- `onItemClick` — línea 3383.
+- `onClick` — línea 3421.
+- `valida` — línea 3434.
+- `msgAskValid` — línea 3487.
+- `onClick` — línea 3493.
+- `msgAskCierreCaja` — línea 3500.
+- `onClick` — línea 3506.
+- `onClick` — línea 3513.
+- `menuImprDoc` — línea 3520.
+- `menuPedidos` — línea 3531.
+- `menuEntrega` — línea 3543.
+- `menuCargarPedidos` — línea 3552.
+- `showVoidMenuTodo` — línea 3564.
+- `showQuickRecep` — línea 3568.
+- `onClick` — línea 3573.
+- `onClick` — línea 3588.
+- `menuAnulDoc` — línea 3595.
+- `borraLinea` — línea 3604.
+- `borraTodo` — línea 3616.
+- `showMenuSwitch` — línea 3620.
+- `onItemClick` — línea 3629.
+- `onClick` — línea 3644.
+- `procesaCortesia` — línea 3657.
+- `imprimeComanda` — línea 3675.
+- `agreganota` — línea 3794.
+- `getProd` — línea 3822.
+- `ejecutaImpresionComanda` — línea 3834.
+- `procesaComanda` — línea 3846.
+- `divideComanda` — línea 3859.
+- `generaArchivos` — línea 3910.
+- `codigoProducto` — línea 4001.
+- `agregaComanda` — línea 4023.
+- `crearPedido` — línea 4042.
+- `crearPedidoEncabezado` — línea 4071.
+- `crearPedidoDetalle` — línea 4101.
+- `estadoPedidos` — línea 4159.
+- `estadoDomicilio` — línea 4189.
+- `cantDomicilio` — línea 4197.
+- `crearFbPedido` — línea 4225.
+- `crearFbPedidoDetalle` — línea 4277.
+- `capturaPedido` — línea 4336.
+- `numeroOrden` — línea 4355.
+- `numeroOrdenLocal` — línea 4365.
+- `numeroOrdenContingencia` — línea 4398.
+- `numeroOrdenCentral` — línea 4431.
+- `ordenInsert` — línea 4444.
+- `ordenQuery` — línea 4459.
+- `ordenDel` — línea 4488.
+- `licenciaActiva` — línea 4500.
+- `validaEstadoLicencia` — línea 4504.
+- `licSucursal` — línea 4513.
+- `getEstadoLicencia` — línea 4551.
+- `iniciaMasVendidos` — línea 4596.
+- `cargaDatosMV` — línea 4647.
+- `MVProducto` — línea 4671.
+- `MVListaProductos` — línea 4708.
+- `onItemClick` — línea 4721.
+- `iniciaMasVendidosOld` — línea 4741.
+- `runFbCallBack` — línea 4802.
+- `getDispProdx` — línea 4830.
+- `getDisp` — línea 4839.
+- `cargaPrecios` — línea 4856.
+- `showInvMenuVenta` — línea 4875.
+- `menuExist` — línea 4915.
+- `menuRecarga` — línea 4923.
+- `menuAjuste` — línea 4933.
+- `tieneAlmacenes` — línea 4941.
+- `validaSupervisorInventario` — línea 4966.
+- `menuInventarioOpc` — línea 5010.
+- `setTipoDescuento` — línea 5021.
+- `AplicaDescuento` — línea 5096.
+- `getCantProd` — línea 5241.
+- `listaDescuentos` — línea 5268.
+- `onClick` — línea 5282.
+- `onItemClick` — línea 5289.
+- `updItemProd` — línea 5333.
+- `updItemLineaProd` — línea 5349.
+- `recalculaLineaProd` — línea 5429.
+- `updItemLineaProdOrig` — línea 5464.
+- `updItemMarcaProd` — línea 5527.
+- `recalculaMarcaProd` — línea 5590.
+- `updItemMarcaProdOrig` — línea 5625.
+- `actualizar_linea_on_delete` — línea 5682.
+- `actualizar_descuento_por_linea_by_tventa` — línea 5737.
+- `cuponFisico` — línea 5785.
+- `listaCupones` — línea 5794.
+- `cbListaCupones` — línea 5813.
+- `menuListaCupones` — línea 5852.
+- `menuCantCupones` — línea 5885.
+- `cargaTarjetasPuntosPendientes` — línea 5925.
+- `cargaCupones` — línea 5934.
+- `addCuponItem` — línea 5951.
+- `addTarVirtItem` — línea 6028.
+- `borrarTarjeta` — línea 6105.
+- `tarjetaVirtual` — línea 6122.
+- `validaPuntosBilletera` — línea 6128.
+- `cbValidaPuntosBilletera` — línea 6143.
+- `listaTallaColor` — línea 6167.
+- `compare` — línea 6196.
+- `showTallaColorMenu` — línea 6208.
+- `nombreColor` — línea 6256.
+- `addTallaColorItem` — línea 6269.
+- `updateTallaColorUID` — línea 6358.
+- `esTallaColor` — línea 6432.
+- `grantAccess` — línea 6448.
+- `accesoEquipo` — línea 6462.
+- `cbAccesoEquipo` — línea 6471.
+- `setNoAtt` — línea 6495.
+- `saveAtten` — línea 6510.
+- `msgAskExit` — línea 6564.
+- `onClick` — línea 6572.
+- `onClick` — línea 6582.
+- `msgAskAdd` — línea 6591.
+- `onClick` — línea 6599.
+- `ingresoNota` — línea 6612.
+- `onClick` — línea 6624.
+- `onClick` — línea 6635.
+- `ingresoBarra` — línea 6641.
+- `onClick` — línea 6653.
+- `onClick` — línea 6673.
+- `showVentaItemMenu` — línea 6679.
+- `onItemClick` — línea 6703.
+- `onClick` — línea 6765.
+- `msgAskTodo` — línea 6778.
+- `msgAskFEL` — línea 6798.
+- `msgAskDelCotresia` — línea 6823.
+- `msgAskDelTarjeta` — línea 6832.
+- `showNivelMenu` — línea 6842.
+- `inputMesa` — línea 6884.
+- `onClick` — línea 6900.
+- `onClick` — línea 6916.
+- `inputMesaDom` — línea 6933.
+- `onClick` — línea 6949.
+- `onClick` — línea 6965.
+- `msgAskSend` — línea 6971.
+- `onClick` — línea 6976.
+- `validaSupervisorFormaPago` — línea 6985.
+- `procesaEnvio` — línea 7029.
+- `setControls` — línea 7057.
+- `hasProducts` — línea 7108.
+- `hasProductsDelivery` — línea 7127.
+- `getLineaProducto` — línea 7149.
+- `getMarcaProducto` — línea 7169.
+- `showCredit` — línea 7189.
+- `hasCredits` — línea 7201.
+- `doExit` — línea 7205.
+- `ltrim` — línea 7215.
+- `prodTipo` — línea 7230.
+- `prodTipo` — línea 7239.
+- `prodPorPeso` — línea 7248.
+- `prodBarra` — línea 7257.
+- `prodRepesaje` — línea 7266.
+- `detectBarcodeScanner` — línea 7275.
+- `prodPrecioBase` — línea 7290.
+- `prodPrecioBaseVal` — línea 7311.
+- `prodPrecioBaseImp` — línea 7331.
+- `prodPrecioEsp` — línea 7407.
+- `getDispOld` — línea 7434.
+- `cantStock` — línea 7447.
+- `cantVenta` — línea 7471.
+- `cantProdCombo` — línea 7495.
+- `clearItem` — línea 7518.
+- `openItem` — línea 7524.
+- `cargaCliente` — línea 7560.
+- `totalCredito` — línea 7636.
+- `compareSC` — línea 7667.
+- `pendienteFEL` — línea 7687.
+- `getURL` — línea 7715.
+- `setNivel` — línea 7739.
+- `modoMeseros` — línea 7760.
+- `validaFacturas` — línea 7782.
+- `enviaAvizo` — línea 7824.
+- `numeroOrdenOld` — línea 7875.
+- `pantallaPortrait` — línea 7900.
+- `pantallaHorizontal` — línea 7910.
+- `meseroAutoLogin` — línea 7923.
+- `umVenta` — línea 7929.
+- `actualizaNota` — línea 7956.
+- `codigoModificador` — línea 7966.
+- `disponibleCorel` — línea 7986.
+- `disponibleCorelFactura` — línea 8011.
+- `validaCorelCredito` — línea 8069.
+- `validaCorelTicket` — línea 8153.
+- `validaMinimoCF` — línea 8237.
+- `exitBtn` — línea 8250.
+- `activarEnvio` — línea 8267.
+- `showUIMsg` — línea 8276.
+- `run` — línea 8279.
+- `run` — línea 8282.
+- `getProdName` — línea 8290.
+- `startCliPosCT` — línea 8299.
+- `valmodulo` — línea 8309.
+- `valmenu` — línea 8313.
+- `tieneTarjetasPuntosPendientes` — línea 8317.
+- `onResume` — línea 8357.
+- `onBackPressed` — línea 8643.
+- `onStart` — línea 8653.
+- `onStop` — línea 8660.
+
+## Para acreditar aprendizaje operativo
+
+Registrar rol, país, parámetros, precondiciones, acción, transición, resultado y evidencia sanitizada. No convertir esta lista estática en una afirmación de pruebas end-to-end.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "mPos operativo"
+  short_description: "Diagnóstico y pruebas de mPos con evidencia y brain"
+  default_prompt: "Usa $mpos-operational-agent para reproducir y diagnosticar este incidente de mPos, consultar el brain y registrar evidencia verificable."

@@ -1,0 +1,10 @@
+{
+  "expected_contrast_confirmed": true,
+  "guarded_pass": 7,
+  "rollback_regressions": 5,
+  "controls_pass_both": 2,
+  "rollback_tip_after_without_then_with": 0,
+  "rollback_percentage_after_explicit_with": 0,
+  "rollback_old_tip_artifact_dispatched": true,
+  "scope": "Android component/extracted-source contracts with synthetic fixtures; not full UI, physical printer or historical customer root cause"
+}
