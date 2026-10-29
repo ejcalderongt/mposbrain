@@ -1,0 +1,1653 @@
+{
+  "schema": 1,
+  "stage_number": 2,
+  "time_utc": "2026-10-29T16:42:14.122901+00:00",
+  "source_commit": "bd94c90c6b097887a1c3d75ef6f70351bd031921",
+  "sdk": 35,
+  "avd": "mPos_Brain_QA_10_API35",
+  "apk_sha256": "604d9546e0d1f987f0fec03a4526ef359eb129c0acbb3a42124f120b1c995633",
+  "statuses": {
+    "configuredRouteReceivesNextStage": "fail"
+  },
+  "kind": "Actual ConfigCaja controls and WSRec receive; test harness enters activities directly; login/menu permissions not covered",
+  "events": [
+    {
+      "stage": "stage_2_main",
+      "received": false,
+      "activity": "MainActivity",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "DecorView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "action_mode_bar_stub",
+          "type": "ViewStub",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "content",
+          "type": "FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            23,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            747
+          ]
+        },
+        {
+          "id": "textView127",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            1216,
+            326,
+            1269,
+            420
+          ]
+        },
+        {
+          "id": "rellaydn",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            747
+          ]
+        },
+        {
+          "id": "rellayup",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            464
+          ]
+        },
+        {
+          "id": "imgNext",
+          "type": "ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            452,
+            84,
+            827,
+            464
+          ]
+        },
+        {
+          "id": "relstrip",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            0,
+            1271,
+            75
+          ]
+        },
+        {
+          "id": "lblCDisp",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            41,
+            1262,
+            70
+          ]
+        },
+        {
+          "id": "textView82",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            5,
+            5,
+            1257,
+            37
+          ]
+        },
+        {
+          "id": "lblCUsed",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            0,
+            38
+          ]
+        },
+        {
+          "id": "imageView134",
+          "type": "ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1074,
+            0,
+            1243,
+            75
+          ]
+        },
+        {
+          "id": "button7",
+          "type": "Button",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            1098,
+            177,
+            1249,
+            236
+          ]
+        },
+        {
+          "id": "spinner22",
+          "type": "Spinner",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            485,
+            419,
+            795,
+            464
+          ]
+        },
+        {
+          "id": "text1",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            14,
+            9,
+            306,
+            36
+          ]
+        },
+        {
+          "id": "relbotpan",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            709,
+            1280,
+            747
+          ]
+        },
+        {
+          "id": "imgPFoto",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            2,
+            2,
+            51,
+            36
+          ]
+        },
+        {
+          "id": "btnImp",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            1235,
+            0,
+            1280,
+            37
+          ]
+        },
+        {
+          "id": "textView9",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            542,
+            0,
+            737,
+            38
+          ]
+        },
+        {
+          "id": "textView10",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1176,
+            0,
+            1280,
+            38
+          ]
+        },
+        {
+          "id": "imageView178",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            0,
+            1,
+            97,
+            38
+          ]
+        },
+        {
+          "id": "relEnter",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            476,
+            473,
+            804,
+            707
+          ]
+        },
+        {
+          "id": "rellaytot",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            328,
+            47
+          ]
+        },
+        {
+          "id": "lblPass",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            5,
+            319,
+            42
+          ]
+        },
+        {
+          "id": "relKeyb",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            42,
+            328,
+            234
+          ]
+        },
+        {
+          "id": "relKeyBase",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            9,
+            319,
+            183
+          ]
+        },
+        {
+          "id": "none",
+          "type": "ConstraintLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            310,
+            174
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            151,
+            174
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            151,
+            82
+          ]
+        },
+        {
+          "id": "textView97",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            71,
+            36,
+            80,
+            45
+          ]
+        },
+        {
+          "id": "textView98",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            71,
+            36
+          ]
+        },
+        {
+          "id": "textView99",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            80,
+            0,
+            151,
+            36
+          ]
+        },
+        {
+          "id": "textView100",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            45,
+            71,
+            82
+          ]
+        },
+        {
+          "id": "textView101",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            80,
+            45,
+            151,
+            82
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            91,
+            151,
+            174
+          ]
+        },
+        {
+          "id": "textView111",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            71,
+            37,
+            80,
+            46
+          ]
+        },
+        {
+          "id": "textView112",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            71,
+            37
+          ]
+        },
+        {
+          "id": "textView113",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            80,
+            0,
+            151,
+            37
+          ]
+        },
+        {
+          "id": "textView114",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            46,
+            151,
+            83
+          ]
+        },
+        {
+          "id": "textView92",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            71,
+            82,
+            80,
+            91
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            160,
+            0,
+            310,
+            174
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            150,
+            82
+          ]
+        },
+        {
+          "id": "imageView24",
+          "type": "ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            79,
+            45,
+            150,
+            82
+          ]
+        },
+        {
+          "id": "textView102",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            70,
+            36
+          ]
+        },
+        {
+          "id": "textView105",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            45,
+            70,
+            82
+          ]
+        },
+        {
+          "id": "textView106",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            79,
+            0,
+            150,
+            36
+          ]
+        },
+        {
+          "id": "textView104",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            79,
+            45,
+            150,
+            82
+          ]
+        },
+        {
+          "id": "textView94",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            70,
+            36,
+            79,
+            45
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            91,
+            150,
+            174
+          ]
+        },
+        {
+          "id": "imageView25",
+          "type": "ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            79,
+            0,
+            150,
+            83
+          ]
+        },
+        {
+          "id": "textView108",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            79,
+            0,
+            150,
+            83
+          ]
+        },
+        {
+          "id": "textView107",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            70,
+            37,
+            79,
+            46
+          ]
+        },
+        {
+          "id": "textView109",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            70,
+            37
+          ]
+        },
+        {
+          "id": "textView110",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            46,
+            70,
+            83
+          ]
+        },
+        {
+          "id": "textView91",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            70,
+            82,
+            79,
+            91
+          ]
+        },
+        {
+          "id": "textView86",
+          "type": "TextView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            151,
+            83,
+            160,
+            92
+          ]
+        },
+        {
+          "id": "listView1",
+          "type": "GridView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            113,
+            443,
+            707
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            -14,
+            434,
+            50
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            54,
+            434,
+            118
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            122,
+            434,
+            186
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            190,
+            434,
+            254
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            258,
+            434,
+            322
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            326,
+            434,
+            390
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            394,
+            434,
+            458
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            462,
+            434,
+            526
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            530,
+            434,
+            594
+          ]
+        },
+        {
+          "id": "lblTrat",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            6,
+            6,
+            428,
+            58
+          ]
+        },
+        {
+          "id": "imageView36",
+          "type": "ImageView",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            3,
+            3,
+            71,
+            65
+          ]
+        },
+        {
+          "id": "button4",
+          "type": "Button",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            1198,
+            410,
+            1271,
+            455
+          ]
+        },
+        {
+          "id": "navigationBarBackground",
+          "type": "View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "statusBarBackground",
+          "type": "View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "config_entry_from_test_harness",
+      "received": false,
+      "activity": "ConfigCaja",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            297,
+            927,
+            495
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            364
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            356
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            329,
+            889,
+            356
+          ]
+        },
+        {
+          "id": "android:id/titleDividerNoCustom",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            356,
+            912,
+            364
+          ]
+        },
+        {
+          "id": "android:id/contentPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/scrollView",
+          "type": "android.widget.ScrollView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/message",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/buttonPanel",
+          "type": "android.widget.ScrollView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/button1",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            841,
+            425,
+            901,
+            476
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "authorized_profile_selected",
+      "received": false,
+      "activity": "ConfigCaja",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            297,
+            927,
+            495
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            364
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            356
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            329,
+            889,
+            356
+          ]
+        },
+        {
+          "id": "android:id/titleDividerNoCustom",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            356,
+            912,
+            364
+          ]
+        },
+        {
+          "id": "android:id/contentPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/scrollView",
+          "type": "android.widget.ScrollView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/message",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/buttonPanel",
+          "type": "android.widget.ScrollView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/button1",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            841,
+            425,
+            901,
+            476
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "configuration_confirmation_open",
+      "received": false,
+      "activity": "ConfigCaja",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            297,
+            927,
+            495
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            364
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            312,
+            912,
+            356
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            329,
+            889,
+            356
+          ]
+        },
+        {
+          "id": "android:id/titleDividerNoCustom",
+          "type": "android.view.View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            356,
+            912,
+            364
+          ]
+        },
+        {
+          "id": "android:id/contentPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/scrollView",
+          "type": "android.widget.ScrollView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/message",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            364,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/buttonPanel",
+          "type": "android.widget.ScrollView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            480
+          ]
+        },
+        {
+          "id": "android:id/button1",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            841,
+            425,
+            901,
+            476
+          ]
+        }
+      ]
+    }
+  ],
+  "phases": [],
+  "states": []
+}

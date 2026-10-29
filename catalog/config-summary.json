@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-10-29T16:28:35.441685+00:00",
+  "source_commit": "bd94c90c6b097887a1c3d75ef6f70351bd031921",
+  "file": "app/src/main/java/com/dtsgt/base/AppMethods.java",
+  "source_sha256": "9ee4b0dd9895a087c32d521676eb25b1643346a4baf1f9f62dd71bfe9ffd8335",
+  "lookup_blocks": 123,
+  "parameter_ids": 110,
+  "scope": "Literal P_PARAMEXT lookups in AppMethods only; same-try writes, not complete dataflow or executed flags."
+}

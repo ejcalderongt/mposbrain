@@ -24,4 +24,14 @@ La copia privada consistente posterior contiene 243 tablas, quick_check correcto
 
 Configuración recibida y leída con lista permitida: P_PARAMEXT 117=S (propina fija), 120=10 (porcentaje), 207=S (confirmación). No existe 118; AppMethods.parametrosExtra usa false para peRest si falta. WSRec omite sala/mesa/grupo cuando peRest=false. No declarar listo el restaurante por el solo éxito de la recepción.
 
-MantConfig.updateItem permite configurar localmente el parámetro 118 como “Modulo restaurante” (MantConfig.java:453,484). Antes de validar el recorrido operativo se requiere confirmar el perfil de caja/usuario y la activación esperada de QA. No se cambió esa configuración ni se generaron ventas o cobros.
+La interpretación inicial de que faltaba habilitar Restaurante manualmente quedó corregida por enseñanza del usuario: el alta requiere tres cargas. La primera recibe empresa; la segunda usa la ruta configurada y recibe su perfil; sólo entonces se conoce que es restaurante, por lo que la tercera recibe salas/mesas. La ausencia de 118 tras la primera carga es compatible con ese flujo y no acredita una configuración defectuosa.
+
+El usuario confirmó sucursal/caja; el perfil operativo está en .local/qa-profile.json. Se ejecutan las etapas restantes mediante ConfigCaja y WSRec, sin insertar manualmente 118. MantConfig puede modificar ese parámetro, pero hacerlo aquí sustituiría el procedimiento enseñado y perdería fidelidad. Login, rol de operador y recorrido de ventas siguen siendo validaciones separadas.
+
+## Por qué son tres cargas en este código
+
+WSRec.onCreate carga parametrosExtra antes de recibir. En wsExecute, las fases 37–39 comprueban ese peRest para elegir GetP_RES_SALA/MESA/GRUPO o callEmptyMethod. La fase 50, posterior a esas decisiones, sólo pide GetP_PARAMEXT_RUTA cuando codigo_ruta>0 (WSRec.java:459–461).
+
+processParamExtRuta acumula un DELETE por ID y la inserción del valor de ruta, que sustituye al valor de empresa en el script. Esos valores se aplican en processData, después de recorrer las fases. No asumir que recibir 118 cambia peRest a mitad del mismo recorrido.
+
+Por tanto: sin ruta en la primera carga no se obtiene ese perfil; con la ruta configurada en la segunda sí se obtiene, pero ya se tomaron las decisiones de salas/mesas; al recargar parámetros antes de la tercera se habilitan esas llamadas. Esta explicación combina el procedimiento enseñado con el orden concreto del código; las observaciones de etapas 2/3 deben acreditar sus transiciones.

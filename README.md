@@ -16,4 +16,4 @@ El escáner requiere Python y las versiones de requirements-scanner.lock. Los la
 
 Estado: inventario estático generado y contraste Android de propina confirmado: siete contratos aprobados con blindajes, cinco regresiones reproducidas sin ellos y dos controles aprobados en ambas versiones. Ver evidence/experiments/RESULTS.md. El aprendizaje dinámico del restaurante completo sigue en construcción. La publicación en GitHub requiere revisar el contenido y elegir un repositorio de destino.
 
-El alta QA también pasó y tiene 33 huellas estructurales y esquema SQLite verificado. Falta confirmar el perfil de Restaurante: QA no envió el parámetro que habilita ese módulo. Consultar brain/onboarding.md y HANDOFF.md antes del siguiente recorrido.
+El alta QA de tres cargas pasó: empresa, perfil de ruta y mesas. Se conservaron 94 huellas estructurales entre las tres etapas, y la última recibió 1 sala y 133 mesas. Login, pedidos, precuenta, cobro y cierre todavía requieren sus recorridos aislados. Consultar brain/onboarding.md y HANDOFF.md antes de continuar.

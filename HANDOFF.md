@@ -16,6 +16,8 @@ Inventario AST Java y XML generado sin copiar textos de código ni literales sen
 
 Entorno local: .venv con tree-sitter 0.25.2 y tree-sitter-java 0.23.5. La versión 0.26.0 produjo una excepción nativa al escanear este corpus; el lock conserva la versión que completó el análisis.
 
+Índice adicional de configuración: 123 bloques/110 IDs de P_PARAMEXT en AppMethods, con escrituras de cuerpo/catch y presencia QA sin valores. Ver brain/configuration.md. MantConfig activa 118; MantConfigRes no equivale a esa activación. CI instala el parser fijado antes de probar estos extractores.
+
 Laboratorio offline: AVD mPos_Brain_Lab_10, puerto 5580, 1280x800, 10 pulgadas. Clones ignorados: .local/workspaces/guarded, rollback y qa. Los dos primeros eliminan INTERNET del manifest; QA conserva red para el alta autorizada.
 
 QA de recepción: AVD mPos_Brain_QA_10_API35, puerto 5584, imagen Google APIs API 35. El primer AVD QA con API 37.2 falló antes de ejecutar mPos. Ver evidence/lab-environment.md. Nunca limpiar datos después de recibir una base sin conservar copia privada.
@@ -25,9 +27,11 @@ El usuario enseñó el alta: base vacía abre Comunicación; empresa y clave per
 ## Pendientes que impiden declarar el objetivo completo
 
 1. Contratos Android A/B completados: guarded 7/7; rollback cinco regresiones esperadas y dos controles aprobados. evidence/experiments/comparison.json registra propina 0 y despacho del archivo previo en fixtures sintéticas. Falta reproducción de UI completa e impresora física.
-2. Alta real completada en QA: prueba aprobada, 33 huellas y copia privada consistente. País HN; propina fija 10% con confirmación. Falta parámetro 118 (Restaurante), por lo que peRest=false y salas/mesas no se cargaron. MantConfig permite configurarlo localmente. Consultas pendientes al usuario: caja/rol de prueba y activación/perfil esperado de Restaurante.
+2. Tres cargas QA aprobadas: 33, 32 y 29 huellas, con snapshots consistentes. La segunda configuró la caja mediante controles reales de ConfigCaja, recibió 118 y cambió peRest a true; la tercera recibió 1 sala y 133 mesas. Evidencia: qa-stage2.json y qa-stage3.json. No repetir cargas por inercia. Perfil autorizado en .local/qa-profile.json. El usuario también indicó mesero, gerente y cajero; son selectores que corresponden a CLAVE en VENDEDORES. Se resolvieron candidatos activos de la ruta por NIVEL y se guardaron en .local/qa-selected-operators.json. No pedir de nuevo esos datos ni publicarlos.
 3. Recorrer restaurante, mesas, cuentas, precuenta, cobro e impresión con una copia privada offline; delimitar acciones que escriben en servidor.
 4. Skill mpos-operational-agent instalada y validada; narrativas iniciales, analizador de trazas y matriz de cobertura disponibles. Completar narrativas con las observaciones de restaurante que aún faltan.
 5. Repositorio ya tiene commits locales y controles aprobados. No hay repositorio GitHub elegido ni publicación realizada.
+
+Siguiente entorno: backend Firebase local con proyecto demo-mpos-brain, ligado a loopback, para pruebas de escrituras sin servidor real. CLI privada instalada con digest fijado (scripts/install_firebase_tools.py). Ver experiments/firebase/README.md. Falta verificar conectividad local y bloqueo externo del AVD antes de ejecutar ventas/cobros/cierres. Las credenciales de operadores se utilizan sólo desde la fixture privada.
 
 No confundir pruebas sintéticas de candidatos con la causa histórica del cliente. La validación de impresora física y configuración completa sigue siendo necesaria.

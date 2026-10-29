@@ -1,0 +1,117 @@
+    private int stage;
+    private JSONObject input,profile;
+    private void privateDialogObservation() throws Exception {
+        AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();if(root==null)return;
+        // Private diagnostic only: feedback TextViews, never EditText inputs. Not part of public fingerprints.
+        try(FileOutputStream f=new FileOutputStream(new File(ins.getTargetContext().getCacheDir(),"brain-private-dialogs.txt"),true)){
+            for(AccessibilityNodeInfo n:root.findAccessibilityNodeInfosByViewId("android:id/message")){
+                if(n.getText()!=null)f.write((n.getText().toString()+"\n").getBytes(StandardCharsets.UTF_8));
+            }
+        }
+    }
+    private void start(Class<?> type) throws Exception {
+        Intent intent=new Intent(ins.getTargetContext(),type);intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        ins.getTargetContext().startActivity(intent);
+        long until=System.currentTimeMillis()+30000;
+        while(System.currentTimeMillis()<until){Activity a=resumed();if(a!=null&&type.isInstance(a)){ins.waitForIdleSync();dismissLegacyAndroidWarning();return;}Thread.sleep(300);}
+        throw new AssertionError("expected_activity_not_resumed");
+    }
+    private void dismissLegacyAndroidWarning() throws Exception {
+        long until=System.currentTimeMillis()+2500;
+        while(System.currentTimeMillis()<until){
+            AccessibilityNodeInfo root=ins.getUiAutomation().getRootInActiveWindow();
+            if(root!=null)for(AccessibilityNodeInfo message:root.findAccessibilityNodeInfosByViewId("android:id/message")){
+                if(message.getText()!=null&&message.getText().toString().contains("older version of Android")){
+                    assertTrue("legacy_Android_warning_cannot_be_acknowledged",clickKnownLabel(root,"OK"));ins.waitForIdleSync();return;
+                }
+            }
+            Thread.sleep(200);
+        }
+    }
+    private void selectCode(Activity a,int viewId,String field,String wanted) throws Exception {
+        java.lang.reflect.Field f=a.getClass().getDeclaredField(field);f.setAccessible(true);
+        AtomicReference<Integer> position=new AtomicReference<>(-1);
+        ins.runOnMainSync(()->{
+            try {position.set(((java.util.ArrayList<String>)f.get(a)).indexOf(wanted));}
+            catch(Exception e){throw new RuntimeException("spinner_code_lookup_failed");}
+        });
+        assertTrue("authorized_profile_code_not_offered",position.get()>=0);
+        ins.runOnMainSync(()->((android.widget.Spinner)a.findViewById(viewId)).setSelection(position.get()));
+        ins.waitForIdleSync();Thread.sleep(300);
+    }
+    private boolean clickKnownLabel(AccessibilityNodeInfo node,String label) {
+        if(node==null)return false;
+        if(node.getText()!=null&&label.equalsIgnoreCase(node.getText().toString().trim())){
+            AccessibilityNodeInfo current=node;
+            for(int i=0;i<4&&current!=null;i++,current=current.getParent())if(current.isClickable())return current.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+        }
+        for(int i=0;i<node.getChildCount();i++)if(clickKnownLabel(node.getChild(i),label))return true;
+        return false;
+    }
+    private int count(com.dtsgt.mpos.PBase a,String table) {
+        try(android.database.Cursor c=a.db.rawQuery("SELECT COUNT(*) FROM "+table,null)){c.moveToFirst();return c.getInt(0);}
+    }
+    private boolean hasRestaurantParameter(com.dtsgt.mpos.PBase a) {
+        try(android.database.Cursor c=a.db.rawQuery("SELECT VALOR FROM P_PARAMEXT WHERE ID=118",null)){
+            return c.moveToFirst()&&"S".equalsIgnoreCase(c.getString(0));
+        }
+    }
+    private void state(String moment,com.dtsgt.mpos.PBase a) throws Exception {
+        JSONObject row=new JSONObject();row.put("stage",stage);row.put("moment",moment);
+        ins.runOnMainSync(()->{
+            try {
+                row.put("countryHN","HN".equals(a.gl.codigo_pais));row.put("restaurantMode",a.gl.peRest);
+                row.put("storeMatchesAuthorized",a.gl.tienda==profile.optInt("store"));row.put("routeMatchesAuthorized",a.gl.codigo_ruta==profile.optInt("route"));
+                row.put("restaurantParameterEnabled",hasRestaurantParameter(a));row.put("rooms",count(a,"P_RES_SALA"));row.put("tables",count(a,"P_RES_MESA"));
+            }catch(Exception e){throw new RuntimeException("state_observation_failed");}
+        });
+        try(FileOutputStream f=new FileOutputStream(new File(ins.getTargetContext().getCacheDir(),"brain-stage-state.jsonl"),true)){
+            f.write((row.toString()+"\n").getBytes(StandardCharsets.UTF_8));
+        }
+    }
+    @Test public void configuredRouteReceivesNextStage() throws Exception {
+        stage=Integer.parseInt(InstrumentationRegistry.getArguments().getString("stage","0"));assertTrue(stage==2||stage==3);
+        input=new JSONObject(new String(Files.readAllBytes(new File("/sdcard/Download/brain-qa-input.json").toPath()),StandardCharsets.UTF_8));
+        profile=new JSONObject(new String(Files.readAllBytes(new File("/sdcard/Download/brain-qa-profile.json").toPath()),StandardCharsets.UTF_8));
+        start(MainActivity.class);event("stage_"+stage+"_main",resumed(),false);
+        if(stage==2){
+            // Test harness enters the real configuration Activity directly. Login/menu permissions are not covered.
+            start(com.dtsgt.mpos.ConfigCaja.class);com.dtsgt.mpos.ConfigCaja config=(com.dtsgt.mpos.ConfigCaja)resumed();
+            event("config_entry_from_test_harness",config,false);
+            privateDialogObservation();
+            selectCode(config,R.id.spinner10,"spincode",String.valueOf(profile.getInt("store")));
+            selectCode(config,R.id.spinner12,"cajacode",String.valueOf(profile.getInt("route")));
+            event("authorized_profile_selected",config,false);
+            ins.runOnMainSync(()->config.doSave(null));
+            event("configuration_confirmation_open",config,false);
+            privateDialogObservation();
+            long until=System.currentTimeMillis()+15000;boolean clicked=false;
+            while(System.currentTimeMillis()<until&&!clicked){clicked=clickKnownLabel(ins.getUiAutomation().getRootInActiveWindow(),"Si");if(!clicked)Thread.sleep(250);}
+            assertTrue("configuration_confirmation_not_found",clicked);ins.waitForIdleSync();
+            start(MainActivity.class);
+        }
+        MainActivity main=(MainActivity)resumed();state("before_receive",main);
+        ins.runOnMainSync(()->{assertEquals(profile.optInt("store"),main.gl.tienda);assertEquals(profile.optInt("route"),main.gl.codigo_ruta);});
+        start(WSRec.class);WSRec screen=(WSRec)resumed();event("stage_"+stage+"_communication",screen,false);
+        ins.runOnMainSync(()->{
+            assertTrue("configured_QA_endpoint_changed",input.optString("endpoint").equals(((EditText)screen.findViewById(R.id.txtURLWS)).getText().toString()));
+            assertTrue("configured_company_not_loaded",input.optString("company").equals(((EditText)screen.findViewById(R.id.txtEmpresa)).getText().toString()));
+            assertTrue("configured_sync_credential_not_loaded",input.optString("key").equals(((EditText)screen.findViewById(R.id.txtClave)).getText().toString()));
+        });
+        ins.runOnMainSync(()->screen.doStart(null));
+        long deadline=System.currentTimeMillis()+300000;boolean finished=false;int previous=0;
+        File phases=new File(ins.getTargetContext().getCacheDir(),"brain-sync-phase.jsonl");
+        while(System.currentTimeMillis()<deadline){
+            String text=phases.isFile()?new String(Files.readAllBytes(phases.toPath()),StandardCharsets.UTF_8):"";
+            int n=text.split("\n").length;
+            if(n!=previous){event("stage_"+stage+"_phase_observation_"+n,resumed(),false);previous=n;}
+            if(text.contains("final_validations_returned")){finished=true;break;}Thread.sleep(1000);
+        }
+        state("after_receive",screen);event("stage_"+stage+"_end",resumed(),screen.gl.estado_recep);
+        assertTrue("stage_finalization_not_observed",finished);assertTrue(screen.gl.estado_recep);
+        ins.runOnMainSync(()->{
+            assertTrue("route_configuration_did_not_enable_restaurant",hasRestaurantParameter(screen));
+            if(stage==3){assertTrue("rooms_not_received",count(screen,"P_RES_SALA")>0);assertTrue("tables_not_received",count(screen,"P_RES_MESA")>0);}
+        });
+    }
+}

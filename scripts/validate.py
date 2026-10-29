@@ -21,6 +21,17 @@ def validate(source=None):
             file=row.get('file','')
             if file and (file.startswith(('/', '\\')) or '..' in Path(file).parts):errors.append(f'{name}: non-relative provenance')
         if name=='inventory':inventory={r['file']:r for r in rows}
+    config_path=ROOT/'catalog/config-summary.json'
+    if config_path.is_file():
+        config=json.loads(config_path.read_text(encoding='utf-8'))
+        bindings=[json.loads(line) for line in (ROOT/'catalog/config_params.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
+        if config['source_commit']!=summary['source_commit']:errors.append('config catalog commit drift')
+        if config['source_sha256']!=inventory.get(config['file'],{}).get('sha256'):errors.append('config source hash drift')
+        if len(bindings)!=config['lookup_blocks'] or len({i for row in bindings for i in row['parameter_ids']})!=config['parameter_ids']:
+            errors.append('config catalog count mismatch')
+        for row in bindings:
+            for write in row['global_writes']:
+                if 'literal' in write and not isinstance(write['literal'],(bool,int,float)):errors.append('configuration literal is not an allowed scalar')
     if source:
         commit=subprocess.check_output(['git','-C',str(source),'rev-parse','HEAD']).decode().strip()
         if commit!=summary['source_commit']:errors.append('source commit drift: regenerate catalog')
@@ -49,6 +60,9 @@ def validate(source=None):
                 if set(node)-{'id','type','visible','enabled','bounds'}:errors.append('unexpected QA widget field: '+p.name)
         for phase in document.get('phases',[]):
             if set(phase)-{'stage','number'}:errors.append('unexpected QA phase field: '+p.name)
+        for state in document.get('states',[]):
+            if set(state)-{'stage','moment','countryHN','restaurantMode','storeMatchesAuthorized','routeMatchesAuthorized','restaurantParameterEnabled','rooms','tables'}:
+                errors.append('unexpected QA state field: '+p.name)
     for p in (ROOT/'catalog').glob('runtime-*-schema.json'):
         document=json.loads(p.read_text(encoding='utf-8'))
         for table in document.get('tables',[]):

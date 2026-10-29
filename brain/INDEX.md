@@ -6,6 +6,7 @@
 | Arquitectura | architecture.md | Componentes, estado compartido e integraciones |
 | Restaurante | restaurant.md | Recorrido prioritario y matriz de validación |
 | Conceptos | glossary.md | Nombres ambiguos y unidades que deben seguirse |
+| Configuración | configuration.md | Parámetros, banderas, defaults y presencia QA |
 | Navegación | ../flows/INDEX.md | Actividades, layouts e Intents candidatos |
 | Estado | ../catalog/global_state.jsonl | Quién lee/escribe estado compartido |
 | Datos | ../catalog/sql_access.jsonl, schema_candidates.jsonl | Operaciones y tablas inferidas de código |
@@ -15,6 +16,7 @@
 | Evidencia | ../evidence/ | Resultados sanitizados reproducibles |
 | Telemetría | telemetry.md | Extracción, correlación y límites de las trazas |
 | Cobertura | coverage.md | Qué está probado y qué sigue pendiente |
+| Auditoría de alcance | completion-audit.md | Requisitos originales y evidencia que falta |
 | Aprendizaje continuo | continuous-learning.md | Ciclo de incorporación y revisión |
 | Aprendizaje | ../templates/learning.md | Cómo incorporar evidencia nueva |
 | Bitácora | ../learning/2026-10-29.md | Hechos incorporados y comprobaciones pendientes |
