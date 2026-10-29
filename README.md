@@ -15,3 +15,5 @@ Este repositorio distingue hechos leídos en código, observaciones ejecutadas e
 El escáner requiere Python y las versiones de requirements-scanner.lock. Los laboratorios se preparan con scripts/lab_prepare.py; sus clones y resultados privados viven bajo .local, excluido de Git. Consultar experiments/propina/README.md antes de ejecutarlos.
 
 Estado: inventario estático generado y contraste Android de propina confirmado: siete contratos aprobados con blindajes, cinco regresiones reproducidas sin ellos y dos controles aprobados en ambas versiones. Ver evidence/experiments/RESULTS.md. El aprendizaje dinámico del restaurante completo sigue en construcción. La publicación en GitHub requiere revisar el contenido y elegir un repositorio de destino.
+
+El alta QA también pasó y tiene 33 huellas estructurales y esquema SQLite verificado. Falta confirmar el perfil de Restaurante: QA no envió el parámetro que habilita ese módulo. Consultar brain/onboarding.md y HANDOFF.md antes del siguiente recorrido.

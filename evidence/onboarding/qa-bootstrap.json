@@ -1,0 +1,5472 @@
+{
+  "schema": 1,
+  "time_utc": "2026-10-29T16:20:11.702431+00:00",
+  "source_commit": "bd94c90c6b097887a1c3d75ef6f70351bd031921",
+  "kind": "Actual Android Activity startup and authorized QA receive; no sales or sends",
+  "base_transaction_received": true,
+  "final_validations_returned": true,
+  "received": true,
+  "phases": [
+    {
+      "stage": "callback",
+      "number": 1
+    },
+    {
+      "stage": "callback",
+      "number": 3
+    },
+    {
+      "stage": "callback",
+      "number": 4
+    },
+    {
+      "stage": "callback",
+      "number": 5
+    },
+    {
+      "stage": "callback",
+      "number": 5
+    },
+    {
+      "stage": "callback",
+      "number": 6
+    },
+    {
+      "stage": "callback",
+      "number": 7
+    },
+    {
+      "stage": "callback",
+      "number": 8
+    },
+    {
+      "stage": "callback",
+      "number": 9
+    },
+    {
+      "stage": "callback",
+      "number": 10
+    },
+    {
+      "stage": "callback",
+      "number": 11
+    },
+    {
+      "stage": "callback",
+      "number": 12
+    },
+    {
+      "stage": "callback",
+      "number": 13
+    },
+    {
+      "stage": "callback",
+      "number": 14
+    },
+    {
+      "stage": "callback",
+      "number": 15
+    },
+    {
+      "stage": "callback",
+      "number": 16
+    },
+    {
+      "stage": "callback",
+      "number": 17
+    },
+    {
+      "stage": "callback",
+      "number": 18
+    },
+    {
+      "stage": "callback",
+      "number": 28
+    },
+    {
+      "stage": "callback",
+      "number": 20
+    },
+    {
+      "stage": "callback",
+      "number": 21
+    },
+    {
+      "stage": "callback",
+      "number": 22
+    },
+    {
+      "stage": "callback",
+      "number": 23
+    },
+    {
+      "stage": "callback",
+      "number": 24
+    },
+    {
+      "stage": "callback",
+      "number": 25
+    },
+    {
+      "stage": "callback",
+      "number": 26
+    },
+    {
+      "stage": "callback",
+      "number": 27
+    },
+    {
+      "stage": "callback",
+      "number": 29
+    },
+    {
+      "stage": "callback",
+      "number": 30
+    },
+    {
+      "stage": "callback",
+      "number": 31
+    },
+    {
+      "stage": "callback",
+      "number": 32
+    },
+    {
+      "stage": "callback",
+      "number": 33
+    },
+    {
+      "stage": "callback",
+      "number": 34
+    },
+    {
+      "stage": "callback",
+      "number": 36
+    },
+    {
+      "stage": "callback",
+      "number": 37
+    },
+    {
+      "stage": "callback",
+      "number": 38
+    },
+    {
+      "stage": "callback",
+      "number": 38
+    },
+    {
+      "stage": "callback",
+      "number": 39
+    },
+    {
+      "stage": "callback",
+      "number": 39
+    },
+    {
+      "stage": "callback",
+      "number": 40
+    },
+    {
+      "stage": "callback",
+      "number": 40
+    },
+    {
+      "stage": "callback",
+      "number": 41
+    },
+    {
+      "stage": "callback",
+      "number": 42
+    },
+    {
+      "stage": "callback",
+      "number": 43
+    },
+    {
+      "stage": "callback",
+      "number": 44
+    },
+    {
+      "stage": "callback",
+      "number": 45
+    },
+    {
+      "stage": "callback",
+      "number": 46
+    },
+    {
+      "stage": "callback",
+      "number": 46
+    },
+    {
+      "stage": "callback",
+      "number": 47
+    },
+    {
+      "stage": "callback",
+      "number": 48
+    },
+    {
+      "stage": "callback",
+      "number": 49
+    },
+    {
+      "stage": "callback",
+      "number": 50
+    },
+    {
+      "stage": "callback",
+      "number": 51
+    },
+    {
+      "stage": "callback",
+      "number": 52
+    },
+    {
+      "stage": "callback",
+      "number": 53
+    },
+    {
+      "stage": "callback",
+      "number": 54
+    },
+    {
+      "stage": "callback",
+      "number": 55
+    },
+    {
+      "stage": "callback",
+      "number": 56
+    },
+    {
+      "stage": "callback",
+      "number": 57
+    },
+    {
+      "stage": "callback",
+      "number": 58
+    },
+    {
+      "stage": "callback",
+      "number": 59
+    },
+    {
+      "stage": "callback",
+      "number": 60
+    },
+    {
+      "stage": "callback",
+      "number": 61
+    },
+    {
+      "stage": "callback",
+      "number": 62
+    },
+    {
+      "stage": "callback",
+      "number": 63
+    },
+    {
+      "stage": "base_transaction_enter",
+      "number": 0
+    },
+    {
+      "stage": "base_transaction_committed",
+      "number": 0
+    },
+    {
+      "stage": "final_enter",
+      "number": 0
+    },
+    {
+      "stage": "final_validations_returned",
+      "number": 0
+    }
+  ],
+  "events": [
+    {
+      "stage": "startup",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "DecorView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            800
+          ]
+        },
+        {
+          "id": "none",
+          "type": "LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "action_mode_bar_stub",
+          "type": "ViewStub",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "content",
+          "type": "FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            1280,
+            770
+          ]
+        },
+        {
+          "id": "relfragment",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            405,
+            197,
+            874,
+            572
+          ]
+        },
+        {
+          "id": "none",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            1,
+            1,
+            468,
+            374
+          ]
+        },
+        {
+          "id": "textView7",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            65,
+            458,
+            88
+          ]
+        },
+        {
+          "id": "relrectop",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            467,
+            60
+          ]
+        },
+        {
+          "id": "lblTit6",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            60,
+            0,
+            382,
+            60
+          ]
+        },
+        {
+          "id": "imageView57",
+          "type": "ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            382,
+            1,
+            467,
+            55
+          ]
+        },
+        {
+          "id": "imageView56",
+          "type": "ImageView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            0,
+            60,
+            60
+          ]
+        },
+        {
+          "id": "relDatos",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            97,
+            467,
+            135
+          ]
+        },
+        {
+          "id": "lblEmpresa",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            0,
+            78,
+            38
+          ]
+        },
+        {
+          "id": "txtEmpresa",
+          "type": "EditText",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            87,
+            0,
+            204,
+            38
+          ]
+        },
+        {
+          "id": "lblClave",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            209,
+            0,
+            258,
+            38
+          ]
+        },
+        {
+          "id": "txtClave",
+          "type": "EditText",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            258,
+            0,
+            408,
+            38
+          ]
+        },
+        {
+          "id": "relURL",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            144,
+            467,
+            182
+          ]
+        },
+        {
+          "id": "lblURLWS",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            0,
+            78,
+            38
+          ]
+        },
+        {
+          "id": "txtURLWS",
+          "type": "EditText",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            87,
+            0,
+            458,
+            38
+          ]
+        },
+        {
+          "id": "relDispositivo",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            191,
+            467,
+            219
+          ]
+        },
+        {
+          "id": "lblIdDispositivo",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            9,
+            0,
+            160,
+            28
+          ]
+        },
+        {
+          "id": "relbotpan",
+          "type": "RelativeLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            338,
+            465,
+            372
+          ]
+        },
+        {
+          "id": "textView9",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            376,
+            7,
+            460,
+            26
+          ]
+        },
+        {
+          "id": "txtVersion",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            82,
+            10,
+            368,
+            19
+          ]
+        },
+        {
+          "id": "progressBar",
+          "type": "ProgressBar",
+          "visible": false,
+          "enabled": true,
+          "bounds": [
+            198,
+            151,
+            269,
+            222
+          ]
+        },
+        {
+          "id": "textView45",
+          "type": "TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            167,
+            239,
+            300,
+            299
+          ]
+        },
+        {
+          "id": "navigationBarBackground",
+          "type": "View",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            0,
+            770,
+            1280,
+            800
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "communication_input_ready",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "receive_navigation",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_1",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_2",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_3",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_6",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_8",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_9",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_10",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_13",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_16",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_18",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_21",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_22",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_24",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_27",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_28",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_30",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_33",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_34",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_39",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_43",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_46",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_50",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_53",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_56",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_58",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_61",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_64",
+      "received": false,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_67",
+      "received": true,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "sync_phase_observation_69",
+      "received": true,
+      "activity": "WSRec",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "receive_end",
+      "received": true,
+      "activity": "ValidCorel",
+      "nodes": [
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            352,
+            303,
+            927,
+            489
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/content",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/parentPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/topPanel",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/title_template",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            318,
+            912,
+            362
+          ]
+        },
+        {
+          "id": "android:id/alertTitle",
+          "type": "android.widget.TextView",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            390,
+            335,
+            889,
+            362
+          ]
+        },
+        {
+          "id": "android:id/customPanel",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/custom",
+          "type": "android.widget.FrameLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "none",
+          "type": "android.widget.LinearLayout",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            362,
+            912,
+            474
+          ]
+        },
+        {
+          "id": "android:id/aerr_close",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            376,
+            912,
+            421
+          ]
+        },
+        {
+          "id": "android:id/aerr_wait",
+          "type": "android.widget.Button",
+          "visible": true,
+          "enabled": true,
+          "bounds": [
+            367,
+            421,
+            912,
+            466
+          ]
+        }
+      ]
+    }
+  ],
+  "sdk": 35,
+  "avd": "mPos_Brain_QA_10_API35",
+  "apk_sha256": "604d9546e0d1f987f0fec03a4526ef359eb129c0acbb3a42124f120b1c995633",
+  "observer_source_sha256": "a1a703ecdfbf7795bcf570ac64149b2a41dde4ad0bde9d429ebf4c9d89a8bdd3",
+  "ui_sampling_seconds": 1,
+  "instrumentation_result": "pass",
+  "duration_seconds": 104.011,
+  "firebase_initialization": "normal; collection disabled by metadata"
+}

@@ -41,6 +41,20 @@ def validate(source=None):
         if any(re.search(pattern,raw) for pattern in patterns):errors.append('possible secret; review privately: '+name)
     for required in ['README.md','AGENTS.md','HANDOFF.md','brain/INDEX.md','agent/skills/mpos-operational-agent/SKILL.md']:
         if not(ROOT/required).is_file():errors.append('missing '+required)
+    for p in (ROOT/'evidence/onboarding').glob('*.json'):
+        document=json.loads(p.read_text(encoding='utf-8'))
+        for event in document.get('events',[]):
+            if set(event)-{'stage','received','activity','nodes'}:errors.append('unexpected QA event field: '+p.name)
+            for node in event.get('nodes',[]):
+                if set(node)-{'id','type','visible','enabled','bounds'}:errors.append('unexpected QA widget field: '+p.name)
+        for phase in document.get('phases',[]):
+            if set(phase)-{'stage','number'}:errors.append('unexpected QA phase field: '+p.name)
+    for p in (ROOT/'catalog').glob('runtime-*-schema.json'):
+        document=json.loads(p.read_text(encoding='utf-8'))
+        for table in document.get('tables',[]):
+            if set(table)-{'table','row_count','columns'}:errors.append('unexpected DB table field: '+p.name)
+            for column in table.get('columns',[]):
+                if set(column)-{'ordinal','name','type','not_null','has_default','primary_key_position'}:errors.append('unexpected DB column field: '+p.name)
     return errors
 
 if __name__=='__main__':

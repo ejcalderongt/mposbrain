@@ -25,9 +25,9 @@ El usuario enseñó el alta: base vacía abre Comunicación; empresa y clave per
 ## Pendientes que impiden declarar el objetivo completo
 
 1. Contratos Android A/B completados: guarded 7/7; rollback cinco regresiones esperadas y dos controles aprobados. evidence/experiments/comparison.json registra propina 0 y despacho del archivo previo en fixtures sintéticas. Falta reproducción de UI completa e impresora física.
-2. Ejecutar el alta real y aprender selección de sucursal/caja/usuario según respuestas del servicio.
+2. Alta real completada en QA: prueba aprobada, 33 huellas y copia privada consistente. País HN; propina fija 10% con confirmación. Falta parámetro 118 (Restaurante), por lo que peRest=false y salas/mesas no se cargaron. MantConfig permite configurarlo localmente. Consultas pendientes al usuario: caja/rol de prueba y activación/perfil esperado de Restaurante.
 3. Recorrer restaurante, mesas, cuentas, precuenta, cobro e impresión con una copia privada offline; delimitar acciones que escriben en servidor.
-4. Completar narrativas funcionales, matriz de cobertura dinámica, validación del brain y skill instalada.
-5. Revisar seguridad y crear commit local. No hay repositorio GitHub elegido ni publicación realizada.
+4. Skill mpos-operational-agent instalada y validada; narrativas iniciales, analizador de trazas y matriz de cobertura disponibles. Completar narrativas con las observaciones de restaurante que aún faltan.
+5. Repositorio ya tiene commits locales y controles aprobados. No hay repositorio GitHub elegido ni publicación realizada.
 
 No confundir pruebas sintéticas de candidatos con la causa histórica del cliente. La validación de impresora física y configuración completa sigue siendo necesaria.

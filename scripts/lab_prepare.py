@@ -146,7 +146,8 @@ dependencies {{
     for item in ['firebase_analytics_collection_enabled','firebase_crashlytics_collection_enabled','firebase_performance_collection_enabled']:
         manifest=manifest.replace('</application>',f'<meta-data android:name="{item}" android:value="false" />\n</application>')
     # SDK installation registration otherwise attempts network even when collection is disabled.
-    manifest=manifest.replace('</application>','<provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:authorities="${applicationId}.firebaseinitprovider" tools:node="remove" />\n</application>')
+    if variant!='qa':
+        manifest=manifest.replace('</application>','<provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:authorities="${applicationId}.firebaseinitprovider" tools:node="remove" />\n</application>')
     path.write_text(manifest,encoding='utf-8')
     (workspace/'local.properties').write_text('sdk.dir=C:/Users/yejc2/AppData/Local/Android/Sdk\n',encoding='utf-8')
     (workspace/'.gradle').mkdir(exist_ok=True)
@@ -161,7 +162,7 @@ dependencies {{
     provenance={'variant':variant,'commit':subprocess.check_output(['git','-C',str(workspace),'rev-parse','HEAD']).decode().strip(),
                 'application_id':appid,'network_permission':variant=='qa','test_seams':(['private buildHeader() made protected in lab only; DB header stubbed','physical printer replaced by a recording driver','percentage recovery probe does not execute the calculator'] if variant!='qa' else ['actual MainActivity and WSRec with payload-free phase observer']),
                 'source_fragments':origins,'source_repo_modified':False,
-                'firebase_initialization':'FirebaseInitProvider removed in lab manifest; no SDK installation registration'}
+                'firebase_initialization':('normal SDK initialization, collection disabled by metadata' if variant=='qa' else 'FirebaseInitProvider removed in lab manifest; no SDK installation registration')}
     (workspace/'brain-lab-provenance.json').write_text(json.dumps(provenance,indent=2),encoding='utf-8')
     if variant=='qa':
         from qa_trace import install
