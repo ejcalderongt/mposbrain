@@ -5,7 +5,7 @@ description: Diagnosticar, reproducir, corregir y validar flujos de mPos Android
 
 # Agente operativo mPos
 
-Localiza el brain independiente: primero variable MPOS_BRAIN_ROOT; después C:/Users/yejc2/source/repos/mpos-brain. Si no existe, pide su ubicación. No inventes rutas de otro equipo.
+Localiza el brain independiente: primero variable MPOS_BRAIN_ROOT; después el checkout actual si contiene AGENTS.md, HANDOFF.md y catalog/scan-summary.json. Como compatibilidad de la estación original, comprueba C:/Users/yejc2/source/repos/mpos-brain sólo si existe. Si no lo encuentras, pide la ubicación del clon de https://github.com/ejcalderongt/mposbrain. No inventes rutas de otro equipo.
 
 Lee AGENTS.md, HANDOFF.md y brain/INDEX.md del brain. Identifica el checkout de mPos y contrasta su commit/estado con catalog/scan-summary.json antes de usar referencias. No descartes cambios locales.
 
